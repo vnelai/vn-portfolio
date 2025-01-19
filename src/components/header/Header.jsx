@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function Header({toggleDarkMode?}) {
+function Header({toggleDarkMode}) {
   return (
     <header>
         {/* Logo top left of page */}
