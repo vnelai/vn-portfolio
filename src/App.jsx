@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/header/Header';
+import HeroSection from './components/hero-section/HeroSection';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div > 
       <Header toggleDarkMode={toggleDarkMode}/>
+      <HeroSection/>
 
     </div>
       
