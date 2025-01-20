@@ -1,9 +1,12 @@
 /* Global styles */
 body {
   margin: 0; /* Remove default margin */
-  height: 100vh; /* Ensure the body takes up full viewport height */
-  overflow: hidden; /* Prevent scrolling */
+  height: 100vh; /* Takes up full viewport height */
+  overflow-x: hidden; /* Prevent  horizontal scrolling */
   font-family: Arial, sans-serif;
+  /* display: flex;
+  flex-direction: column;
+  box-sizing: border-box; */
 }
 
 .dark {
