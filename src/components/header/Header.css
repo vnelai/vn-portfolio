@@ -17,6 +17,14 @@ header {
 transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
+.header-left a {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;  /* Adjust size as needed */
+  color: black;   /* Change this to your preferred color */
+  text-decoration: none;
+}
+
+
 
 /* Mobile styling: for screens smaller than 768px */
 @media (max-width: 768px) {
