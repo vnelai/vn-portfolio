@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function Header({toggleDarkMode}) {
+function Header({toggleDarkMode, isDarkMode}) {
   return (
     <header>
         {/* Left Section: Logo / Name */}
@@ -23,7 +23,13 @@ function Header({toggleDarkMode}) {
 
         {/* Right Section: Mode Toggle */}
         <div className='mode-toggle'>
-            <button onClick={toggleDarkMode}>🌙/🌞</button>
+            <button onClick={toggleDarkMode}>
+              {isDarkMode ? (
+                <i className="fas fa-sun"></i> // Sun icon for light mode
+              ) : (
+                <i className="fas fa-moon"></i> // Moon icon for dark mode
+            )}
+            </button>
         </div>
     </header>
   );

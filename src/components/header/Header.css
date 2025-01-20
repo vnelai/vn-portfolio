@@ -4,6 +4,19 @@ header {
   
 }
 
+.mode-toggle button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+  
+.mode-toggle button:hover {
+transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
 
 /* Mobile styling: for screens smaller than 768px */
 @media (max-width: 768px) {
