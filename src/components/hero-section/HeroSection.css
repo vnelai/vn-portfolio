@@ -1,17 +1,17 @@
+/* Hero Section Styling */
 .hero-section {
   position: relative;
   height: 100vh; /* Full viewport height */
   text-align: center;
   background-image: url("public/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg");
   background-size: cover; /* Ensure the image covers the section */
-  background-position: center center; /* Center the image */
+  background-position: center; /* Center the image */
   display: flex;
-  justify-content: center; /* Align content to the top */
-  align-items: center; /* Align content to the top */
+  justify-content: center; 
+  align-items: center; 
   padding: 2rem;
   color: white; /* Make text white by default for contrast */
 }
-
 
 .hero-section::before {
   content: "";
@@ -20,16 +20,40 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  background: rgba(0, 0, 0, 1); /* Dark overlay */
   z-index: -1; /* Place the overlay behind the content */
 }
 
+/* Hero Text Content Styling */
 .hero-content {
-  max-width:600px;
+  max-width:700px;
   margin-top: 5rem; /* Adds space from the top */
   margin: 0 auto;
 }
 
+.hero-content h1 {
+  font-size: 3rem; 
+  font-weight: 800; 
+  text-transform: uppercase; 
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.hero-content h1, 
+.hero-content h2, 
+.hero-content p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+}
+
+/* Hero Section CTA buttons Styling */
 .hero-btns-div {
   display: flex;
   justify-content: center;

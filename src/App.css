@@ -7,17 +7,9 @@ body {
 
 }
 
-/* Apply Playfair Display SC to headings */
-/* h1, h2, h3 {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 32px;
-  font-weight: 700;  /* bold weight */
-  color: #333333;
-} */
-
 /* light and dark mode styles */
 body.dark {
-  background-color: #121212;
+  background-color: rgb(16, 15, 15);
   color: white;
 }
 

@@ -10,7 +10,10 @@ function HeroSection() {
             <h2>Software Engineer & Security Enthusiast</h2>
             <p>
                 Passionate about building secure, user-friendly websites 
-                and applications. Skilled in React, JavaScript, and UI design.
+                and applications.
+            </p>
+            <p>
+            Skilled in full-stack development with MongoDB, Express, React, Node.js.
             </p>
             <div className='hero-btns-div'>
               <a 
