@@ -90,11 +90,12 @@ body.light .menu-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Ensure header spans full width */
   }
 
   /* Menu in the header between left and right */
   .menu-container {
-    position: static;
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +103,7 @@ body.light .menu-container {
 
   .menu ul {
     display: flex;
-    flex-direction: row; /* Horizontal layout */
-    justify-content: space-around; /* Distribute items evenly */
+    justify-content: center; 
     width: 100%; 
     list-style: none;
     margin: 0;
@@ -118,6 +118,7 @@ body.light .menu-container {
     text-decoration: none;
     font-size: 18px;
     color: inherit;
+    font-weight: 800;
   }
   
 }
