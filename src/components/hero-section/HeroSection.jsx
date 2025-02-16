@@ -19,7 +19,7 @@ function HeroSection() {
                 rel="noopener noreferrer" 
                 className='hero-btn'
               >
-                  Get Resume  &#x1F4E5; 
+                  Get Resume
               </a>
               <a href="/projects" className='hero-btn'>View Projects</a>
             </div>
