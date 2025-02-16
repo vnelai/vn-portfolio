@@ -12,11 +12,17 @@ function HeroSection() {
                 Passionate about building secure, user-friendly websites 
                 and applications. Skilled in React, JavaScript, and UI design.
             </p>
-            <a href='/public/Virginia_Nelai _Resume.pdf' target="_blank" rel="noopener noreferrer">
-                Download My Resume
-            </a>
-
-            <a href="/projects">View Projects</a>
+            <div className='hero-btns-div'>
+              <a 
+                href='/public/Virginia_Nelai _Resume.pdf' 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className='hero-btn'
+              >
+                  Get Resume  &#x1F4E5; 
+              </a>
+              <a href="/projects" className='hero-btn'>View Projects</a>
+            </div>
         </div>
     </section>
   );

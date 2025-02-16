@@ -1,0 +1,54 @@
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-image: url("public/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg");
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center center; /* Center the image */
+  display: flex;
+  justify-content: center; /* Align content to the top */
+  align-items: center; /* Align content to the top */
+  padding: 2rem;
+  color: white; /* Make text white by default for contrast */
+}
+
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  z-index: -1; /* Place the overlay behind the content */
+}
+
+.hero-content {
+  max-width:600px;
+  margin-top: 5rem; /* Adds space from the top */
+  margin: 0 auto;
+}
+
+.hero-btns-div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 1.5rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #007bff; /* Blue background color */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
