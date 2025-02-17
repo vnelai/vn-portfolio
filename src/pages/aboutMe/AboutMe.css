@@ -1,0 +1,34 @@
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .skills-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+  }
