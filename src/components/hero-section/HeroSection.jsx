@@ -22,9 +22,11 @@ function HeroSection() {
                 rel="noopener noreferrer" 
                 className='hero-btn'
               >
-                  Get Resume
+                   <i class="fa-solid fa-download"></i> Get Resume
               </a>
-              <a href="/projects" className='hero-btn'>View Projects</a>
+              <a href="/projects" className='hero-btn'>
+                <i class="fa-solid fa-folder-open"></i> View Projects
+              </a>
             </div>
             <div class="social-media-div">
               <a href="https://github.com/vnelai" class="sm-button github" target="_blank" rel="noopener noreferrer">
