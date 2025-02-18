@@ -7,32 +7,26 @@ function AboutMe() {
       <div className="about-content">
         {/* Left Side - Text */}
         <div className="about-text">
-          <h1>About Me</h1>
-          <h2>My Journey</h2>
+          <h1>My Journey</h1>
           <p>
-            I started my journey in Greece, and after high school, I moved to New York with big dreams of becoming a doctor. 
-            I completed my pre-med bachelor's with a 3.93 GPA, driven by my family’s hopes for me to follow a stable, respected career. 
-            However, life had other plans. I had to step up to care for my younger siblings, and balancing school with multiple jobs made it impossible to continue toward medical school.
+            I started my journey in Greece, and after high school, I moved to New York to pursue a career in medicine. I completed my pre-med bachelor's with a 3.93 GPA, 
+            encouraged by my family’s hopes for me to follow a stable, respected career. However, while balancing school, multiple jobs, and caring for my younger siblings, 
+            I realized that continuing to medical school was no longer the right path for me.
           </p>
           <p>
-            My first leadership role was as a shift supervisor at an adult home, where I learned the value of hard work and helping others. 
-            Later, I moved into the music industry, starting as an inventory manager and eventually becoming the director of operations for retail, events, and music. 
-            This is where I first fell in love with data and technology. I earned Google’s Data Analytics certification, followed by PCEP (Python) and several CompTIA certifications, including ITF+, A+, Network+, and Security+.
+            From leading teams in healthcare, retail, and the music industry to diving deep into data, cybersecurity, and software engineering, I found my true calling in tech. 
+            Once I stepped into this world, I couldn’t stop learning. I love problem-solving, troubleshooting, and continuously improving—every challenge is a chance to grow. 
+            Cybersecurity excites me because it feels like solving puzzles and unraveling mysteries, and I even play Capture the Flag competitions for fun!
           </p>
           <p>
-            To strengthen my foundation, I took key prerequisites for a master's in computer science, including Discrete Math, Data Structures, and Operating Systems. 
-            Graduating as valedictorian from my software engineering bootcamp was a proud moment, proving that despite challenges, I could succeed. 
-            My next goal is to gain cloud certifications and transition into AI engineering.
-          </p>
-          <p>
-            Now, with skills in both cybersecurity and software engineering, I’m looking for my first role in tech and planning to pursue a master’s degree. 
-            My journey—from healthcare to tech—has shaped me into who I am today, and I’m ready to tackle whatever comes next.
+            Graduating as valedictorian from my software engineering bootcamp was a proud milestone. Now, with certifications in cybersecurity, cloud computing on my radar, 
+            and a strong foundation in software development, I’m ready for my first tech role. My next goal? To grow as an engineer and cybersecurity professional while pursuing a master’s in computer science.
           </p>
         </div>
 
         {/* Right Side - Profile Image */}
         <div className="about-image">
-          <img src="/dhaval-parmar-dnPniNPUe4o-unsplash.jpg" alt="Laptop" />
+          <img src="/Yellow_Inspiration_Modern_Instagram_Profile_Picture-removebg-preview.png" alt="Laptop" />
         </div>
       </div>
 
