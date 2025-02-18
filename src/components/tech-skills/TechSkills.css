@@ -1,5 +1,6 @@
 .skills-section {
   margin: 20px 0;
+  overflow: hidden; /* Keeps overflow hidden */
 }
 
 .skills-section.software-skills {
@@ -19,8 +20,10 @@
 .skills-wrapper {
   display: flex;
   gap: 15px;
-  animation: scrollSkills 20s linear infinite;
+  animation: scrollSkills 50s linear infinite;
   white-space: nowrap;
+  position: relative;
+  width: max-content; /* Ensures that the wrapper grows based on content */
 }
 
 .skill-item {
@@ -50,6 +53,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }

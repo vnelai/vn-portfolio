@@ -32,18 +32,20 @@ const cyberSecuritySkills = [
   { icon: "fas fa-tachometer-alt", name: "Monitoring" },
   //   { icon: "fab fa-aws", name: "AWS Sec" },
   //   { icon: "fab fa-google", name: "Google Sec" },
-
 ];
 
 function TechSkills() {
+  // Function to duplicate skills for seamless scrolling
+  const duplicateSkills = (skills) => [...skills, ...skills, ...skills]; // Clone skills array
+
   return (
     <section>
-    {/* Software Engineering Skills Section with Animation */}
+      {/* Software Engineering Skills Section with Animation */}
       <div className="skills-section software-skills">
         <h2>Software Engineering Skills</h2>
         <div className="skills-container">
           <div className="skills-wrapper">
-            {softwareEngineeringSkills.map((skill, index) => (
+            {duplicateSkills(softwareEngineeringSkills).map((skill, index) => (
               <div key={index} className="skill-item">
                 <i className={skill.icon}></i>
                 <span>{skill.name}</span>
@@ -58,7 +60,7 @@ function TechSkills() {
         <h2>Cybersecurity Skills</h2>
         <div className="skills-container">
           <div className="skills-wrapper">
-            {cyberSecuritySkills.map((skill, index) => (
+            {duplicateSkills(cyberSecuritySkills).map((skill, index) => (
               <div key={index} className="skill-item">
                 <i className={skill.icon}></i>
                 <span>{skill.name}</span>
