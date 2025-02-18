@@ -26,7 +26,7 @@ function AboutMe() {
 
         {/* Right Side - Profile Image */}
         <div className="about-image">
-          <img src="/Yellow_Inspiration_Modern_Instagram_Profile_Picture-removebg-preview.png" alt="Laptop" />
+          <img src="public/Untitled design (1).png" alt="Laptop" />
         </div>
       </div>
 
