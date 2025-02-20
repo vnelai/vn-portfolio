@@ -1,33 +1,32 @@
 /* Header styling */
 header {
   display: flex;
-  
 }
 
 .mode-toggle button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: inherit;
-    transition: transform 0.3s ease;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s ease;
 }
-  
+
 .mode-toggle button:hover {
-transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
 .header-left a {
-  font-family: 'Pacifico', cursive;
-  font-size: 36px;  /* Adjust size as needed */
-  color: black;   /* Change this to your preferred color */
+  font-family: "Pacifico", cursive;
+  font-size: 36px; /* Adjust size as needed */
+  color: black; /* Change this to your preferred color */
   text-decoration: none;
 }
 
 /* Specific styles for header and menu when in dark mode */
 body.dark .header-left a,
 body.dark .menu a,
-body.dark .menu-container  {
+body.dark .menu-container {
   color: white;
 }
 
@@ -38,14 +37,12 @@ body.light .menu-container {
   color: black;
 }
 
-
 /* Mobile styling: for screens smaller than 768px */
 @media (max-width: 768px) {
   /* Header Layout */
   header {
     justify-content: space-between;
     align-items: center;
-    
   }
 
   /* Menu items: centered at the bottom */
@@ -65,7 +62,7 @@ body.light .menu-container {
     display: flex;
     flex-direction: row; /* Horizontal layout */
     justify-content: space-around; /* Distribute items evenly */
-    width: 100%; 
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -94,7 +91,7 @@ body.light .menu-container {
 
   /* Menu in the header between left and right */
   .menu-container {
-    flex: 1; 
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +99,8 @@ body.light .menu-container {
 
   .menu ul {
     display: flex;
-    justify-content: center; 
-    width: 100%; 
+    justify-content: center;
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -114,11 +111,32 @@ body.light .menu-container {
     margin: 0 10px;
   }
 
-  .menu a {
+  .menu a{
     text-decoration: none;
     font-size: 22px;
     color: inherit;
     font-weight: 800;
+    position: relative;
   }
-  
+
+  .menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of underline */
+    background-color: currentColor; /* Matches text color */
+    transform: scaleX(0); /* Start hidden */
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .menu a:hover::after {
+    transform: scaleX(1); /* Expands underline */
+  }
+
+  .menu a {
+    transition: color 0.5s ease-in-out; /* Smooth color transition */
+  }
 }
