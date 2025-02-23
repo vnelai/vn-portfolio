@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    background-color: #f4f4f4;
+    margin:0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+/* Form Container */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack the form elements vertically */
+    gap: 1rem; /* Space between form elements */
+}
+
+/* Form Elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f6f5f5;
+}
+
+input[type="text"], input[type="email"] {
+    height: 40px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical; /* Allows resizing */
+}
+
+/* Submit Button */
+.form-btn {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient from blue to darker blue */
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* To ensure the elements are aligned */
+input, textarea, button {
+    box-sizing: border-box;
+}
+
+.form-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow on hover */
+}
+
+
+/* Dark Mode Styling */
+/* Dark Mode Form Container */ 
+body.dark .contact-form {
+    background-color: #5f3f8a; /* Dark gray background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow in dark mode */
+}
+
+body.dark input, body.dark textarea {
+    background-color: #4b2e6f; /* Slightly darker background for inputs in dark mode */
+    color: #f4f4f4; /* Light text inside inputs */
+    border: 1px solid #7a4d9c; /* Slightly darker border */
+}
+
+/* Dark Mode Button */
+body.dark .form-btn {
+    background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}

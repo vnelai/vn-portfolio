@@ -6,10 +6,13 @@ header {
 .mode-toggle button {
   background: none;
   border: none;
+  outline: none;    
+  padding: 0 1rem;   
   font-size: 24px;
   cursor: pointer;
   color: inherit;
   transition: transform 0.3s ease;
+  box-shadow: none; 
 }
 
 .mode-toggle button:hover {
@@ -21,6 +24,7 @@ header {
   font-size: 36px; /* Adjust size as needed */
   color: black; /* Change this to your preferred color */
   text-decoration: none;
+  padding-left: 0.5rem;
 }
 
 /* Specific styles for header and menu when in dark mode */
