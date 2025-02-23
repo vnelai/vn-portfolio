@@ -7,7 +7,7 @@ function HeroSection() {
     <section className='hero-section'>
         <div className='hero-content'>
             <h1>Hi, I'm Virginia</h1>
-            <h2>Software Engineer & Security Enthusiast</h2>
+            <h2>Software Engineer & Tech Enthusiast</h2>
             <p>
                 Passionate about building secure, user-friendly websites 
                 and applications.
@@ -35,7 +35,7 @@ function HeroSection() {
               <a href="https://www.linkedin.com/in/virginianelai/" class="sm-button linkedin" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="https://www.youtube.com/@StarlightLabsX" class="sm-button youtube" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://www.youtube.com/@StarlightLabsX" class="sm-button youtube" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-youtube"></i>
               </a> 
               <a href="https://www.facebook.com/StarlightLabsX/" class="sm-button facebook" target="_blank" rel="noopener noreferrer">
@@ -46,13 +46,10 @@ function HeroSection() {
               </a>
               <a href="https://x.com/StarlightLabs_X" class="sm-button twitter" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-twitter"></i>
-              </a>
+              </a> */}
               <a href="mailto:vnelai01@gmail.com" class="sm-button google" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-google"></i>
               </a>
-              {/* <a href="https://medium.com" class="sm-button medium" target="_blank" rel="noopener noreferrer">
-                  <i class="fa-brands fa-medium"></i>
-              </a> */}
           </div>
         </div>
     </section>

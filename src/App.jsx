@@ -29,7 +29,7 @@ function App() {
 
   // Function to change the state of mode-toggle
   const toggleDarkMode = () => {
-    setDarkMode(prevMode => !isDarkMode);
+    setDarkMode(prevMode => !prevMode);
 
   };
 
