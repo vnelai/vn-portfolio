@@ -1,7 +1,7 @@
 import React from "react";
-import "./Journey.css"
+import "./Journey.css";
 
-function Journey() {
+function Journey({ isDarkMode }) {
   return (
     <section className="about-container">
       <div className="about-content">
@@ -39,7 +39,14 @@ function Journey() {
 
         {/* Right Side - Profile Image */}
         <div className="about-image">
-          <img src="public/Untitled design (1).png" alt="Laptop" />
+          <img
+            src={
+              isDarkMode
+                ? `public/PURPLE GRADIENT.png`
+                : `public/BLUE GRADIENT.png`
+            }
+            alt="professional-pic"
+          />
         </div>
       </div>
     </section>

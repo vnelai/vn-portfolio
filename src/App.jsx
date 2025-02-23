@@ -40,7 +40,7 @@ function App() {
         <Routes>
           {/* Set up Routes for each page */}
           <Route path="/" element={<Home />} />
-          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/about-me" element={<AboutMe isDarkMode={isDarkMode} />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />

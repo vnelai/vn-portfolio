@@ -4,10 +4,10 @@ import Journey from '../../components/journey/Journey';
 import TechSkills from '../../components/tech-skills/TechSkills';
 
 
-function AboutMe() {
+function AboutMe({ isDarkMode }) {
   return (
     <>
-      <Journey/>
+      <Journey isDarkMode={isDarkMode}/>
       <TechSkills/>
     </>
   );

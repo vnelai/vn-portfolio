@@ -4,11 +4,7 @@
 }
 
 .skills-section.software-skills {
-  margin-bottom: 50px; /* Space below Software Skills section */
-}
-
-.skills-section.cyber-skills {
-  margin-top: 50px; /* Space above Cybersecurity Skills section */
+  margin-bottom: 30px; /* Space below Software Skills section */
 }
 
 .skills-container {
@@ -33,7 +29,7 @@
   gap: 0.5rem;
   font-size: 2rem;
   color: white;
-  background: #6a5acd;
+  background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient from blue to darker blue */
   padding: 10px 20px;
   border-radius: 12px;
   min-width: 160px;
@@ -55,4 +51,9 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Dark Mode Styling */
+body.dark .skill-item {
+background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
 }
