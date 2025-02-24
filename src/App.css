@@ -4,7 +4,6 @@ body {
   height: 100vh; /* Takes up full viewport height */
   overflow-x: hidden; /* Prevent  horizontal scrolling */
   font-family: Arial, sans-serif;
-
 }
 
 /* light and dark mode styles */
