@@ -7,7 +7,7 @@ function ProjectsComp({ projects }) {
         <h1>My Projects</h1>
         <div className='projects-container'>
             {projects.map((project, index) =>(
-                <div className='project-card'>
+                <div key={index} className='project-card'>
                     <img src={project.image} alt={project.title}/>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
