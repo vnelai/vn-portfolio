@@ -1,6 +1,5 @@
 .projects-component {
   padding: 40px;
-  background-color: #f9f9f9;
   margin-top: 40px; /* Add space between the nav and projects section */
 }
 
@@ -36,7 +35,6 @@
 
 .project-card p {
   font-size: 1rem;
-  color: #555;
 }
 
 .project-card img {
@@ -64,7 +62,6 @@
 .project-technologies li {
   margin: 0 10px;
   font-size: 0.9rem;
-  color: #555;
 }
 
 .project-links {
@@ -77,11 +74,17 @@
 .project-links a {
   margin: 10px;
   text-decoration: none;
-  color: #007bff;
+  color: white;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .project-links a:hover {
   text-decoration: underline;
+}
+
+/* Dark Mode Styling */
+body.dark .project-card {
+  background-color: #5f3f8a; /* Dark gray background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow in dark mode */
 }

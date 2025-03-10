@@ -14,7 +14,7 @@ const projects = [
     description: 'The React To-Do List app was built to demonstrate my understanding of React fundamentals, including handling user interactions, managing state with useState, and utilizing Vite for fast front-end development. The app allows users to create, edit, delete, and display tasks, with additional functionality for rearranging tasks by priority and marking tasks as completed.This project showcases my ability to build a dynamic user interface using React, where state is updated based on user actions without a back-end or database. It highlights my proficiency in React\'s event handling, conditional rendering, and state management to implement a full CRUD functionality.',
     liveLink: ' https://vnelai.github.io/React_Todo_List/',
     repoLink: ' https://github.com/vnelai/React_Todo_List.git',
-    image: '/public/to-do-list2.png',
+    image: '/public/to-do-list.png',
     technologies: ['React', 'Vite', 'JavaScript', 'HTML/CSS'],
   },
   // Add more projects
