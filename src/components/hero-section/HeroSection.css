@@ -4,7 +4,7 @@
   width: 100%; /* Full width */
   padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
   text-align: center;
-  background-image: url("public/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg");
+  background-image: url("/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg");
   background-size: cover; /* Ensure the image covers the section */
   background-position: center; /* Center the image */
   display: flex;
@@ -16,7 +16,7 @@
 
 /* Dark Mode Background */
 body.dark .hero-section {
-  background-image: url('public/pexels-anniroenkae-3109807.jpg');
+  background-image: url('/pexels-anniroenkae-3109807.jpg');
 }
 
 .hero-section::before {
