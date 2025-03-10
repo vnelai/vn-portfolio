@@ -42,8 +42,8 @@ function Journey({ isDarkMode }) {
           <img
             src={
               isDarkMode
-                ? `public/PURPLE GRADIENT.png`
-                : `public/BLUE GRADIENT.png`
+                ? `/PURPLE GRADIENT.png`
+                : `/BLUE GRADIENT.png`
             }
             alt="professional-pic"
           />
