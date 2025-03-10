@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Home from './pages/Home';
 import AboutMe from './pages/aboutMe/AboutMe';
-import Blog from './pages/Blog';
+import BlogPage from './pages/BlogPage';
+import Article from '././components/article/Article'; // Full Article Component
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 // Import Styling
@@ -42,7 +43,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-me" element={<AboutMe isDarkMode={isDarkMode} />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<Article />} /> {/* Dynamic routing for full article */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
