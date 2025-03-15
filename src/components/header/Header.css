@@ -1,6 +1,10 @@
 /* Header styling */
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .mode-toggle button {
@@ -21,7 +25,7 @@ header {
 
 .header-left a {
   font-family: "Pacifico", cursive;
-  font-size: 36px; /* Adjust size as needed */
+  font-size: 3rem; /* Adjust size as needed */
   color: black; /* Change this to your preferred color */
   text-decoration: none;
   padding-left: 0.5rem;
@@ -46,45 +50,82 @@ body.light .menu-container {
  
   /* Header Layout */
   header {
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
   }
+
+   /* Light/Dark Mode Toggle (Left) */
+   .mode-toggle {
+    position: absolute;
+    left: 1rem;
+    top:1rem;
+  }
+
+   /* Brand Name / Home Button (Centered) */
+  .header-left a {
+    font-size: 2rem; /* Reduce font size on smaller screens */
+    text-align: center;
+  }
+
+   /* Hamburger Menu - Display on mobile */
+   .menu-toggle {
+    display: block; /* Visible on mobile */
+    cursor: pointer;
+    font-size: 28px;
+  }
+
 
   /* Menu items: centered at the bottom */
   .menu-container {
-    position: fixed; /* Stick to bottom */
-    top: 0;
+    position: absolute;
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: inherit; /* Use body background color */
-    padding: 0.75rem 0; 
-    display: flex;
-    justify-content: space-around;
+    padding: 1rem 0; 
+    display: block; /* Visible */
     z-index: 1000; /* Stays above other content */
   }
 
+    /* Active menu container (displayed when menu is open) */
+    .menu-container.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
   .menu ul {
+    /*
     display: flex;
     flex-direction: row; /* Horizontal layout */
-    justify-content: space-around; /* Distribute items evenly */
-    width: 100%;
+    /* justify-content: space-around; /* Distribute items evenly */
+    /* width: 100%;  */
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align:center;
   }
 
   .menu li {
     margin: 0 10px;
+
   }
 
   .menu a {
     text-decoration: none;
     font-size: 18px;
     color: inherit;
-    font-weight: 700; /* Bold text */
-    position: relative;
+    font-weight: 700;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
   }
 }
+
+
 
 /* Desktop Styling: Styles for screens larger than 768px */
 @media (min-width: 769px) {
@@ -111,16 +152,15 @@ body.light .menu-container {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: -25px;
   }
 
   .menu li {
-    margin: 0 10px;
+    margin: 0 1rem;
   }
 
   .menu a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.4rem;
     color: inherit;
     font-weight: 800;
     position: relative;
@@ -147,3 +187,9 @@ body.light .menu-container {
     transition: color 0.5s ease-in-out; /* Smooth color transition */
   }
 }
+
+/* Hamburger Menu for Mobile - Hidden on desktop */
+.menu-toggle {
+  display: none;
+}
+
