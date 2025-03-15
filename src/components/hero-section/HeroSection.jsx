@@ -22,10 +22,10 @@ function HeroSection() {
                 rel="noopener noreferrer" 
                 className='hero-btn'
               >
-                   <i class="fa-solid fa-download"></i> Get Resume
+                   <i className="fa-solid fa-download"></i> Get Resume
               </a>
               <a href="/projects" className='hero-btn'>
-                <i class="fa-solid fa-folder-open"></i> View Projects
+                <i className="fa-solid fa-folder-open"></i> View Projects
               </a>
             </div>
         </div>

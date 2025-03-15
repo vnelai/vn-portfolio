@@ -17,3 +17,9 @@ body.light {
   color: black;
 }
 
+/* Mobile styling: for screens smaller than 768px */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px; /* Adjust based on the height of your fixed header */
+  }
+}

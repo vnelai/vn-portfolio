@@ -43,6 +43,7 @@ body.light .menu-container {
 
 /* Mobile styling: for screens smaller than 768px */
 @media (max-width: 768px) {
+ 
   /* Header Layout */
   header {
     justify-content: space-between;
@@ -52,11 +53,11 @@ body.light .menu-container {
   /* Menu items: centered at the bottom */
   .menu-container {
     position: fixed; /* Stick to bottom */
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: inherit; /* Use body background color */
-    padding: 10px 0;
+    padding: 0.75rem 0; 
     display: flex;
     justify-content: space-around;
     z-index: 1000; /* Stays above other content */
@@ -78,8 +79,10 @@ body.light .menu-container {
 
   .menu a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: inherit;
+    font-weight: 700; /* Bold text */
+    position: relative;
   }
 }
 
