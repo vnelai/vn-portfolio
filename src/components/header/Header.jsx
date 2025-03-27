@@ -10,13 +10,18 @@ function Header({ toggleDarkMode, isDarkMode }) {
 
   return (
     <header>
-      {/* Left Section: Logo / Name */}
-      <div className="header-left">
-        <a href="/">Virginia</a>
+      {/* Logo / Brand Name */}
+      <div className="logo">
+        <a  href="/">Virginia</a>
       </div>
 
-      {/* Center Section: Menu items */}
-      <div className="menu-container">
+       {/* Hamburger Menu */}
+       <div className="menu-toggle" onClick={toggleMenu}>
+        <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i> {/* Hamburger icon */}
+      </div>
+
+      {/* Menu items */}
+      <div className={`menu-container ${isMenuOpen ? "active" : ""}`}>
         <nav className="menu">
           <ul>
             <li>
@@ -35,7 +40,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
         </nav>
       </div>
 
-      {/* Right Section: Mode Toggle */}
+      {/* Light/Dark Mode Toggle */}
       <div className="mode-toggle">
         <button onClick={toggleDarkMode}>
           {isDarkMode ? (
@@ -44,11 +49,6 @@ function Header({ toggleDarkMode, isDarkMode }) {
             <i className="fas fa-moon"></i> // Moon icon for dark mode
           )}
         </button>
-      </div>
-
-      {/* Right Section: Hamburger Menu (visible only on mobile) */}
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <i className="fas fa-bars"></i> {/* Hamburger icon */}
       </div>
 
     </header>
