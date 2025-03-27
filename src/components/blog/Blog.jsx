@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Blog.css';
 
 const Blog = ({ articles }) => {
   return (
@@ -17,7 +18,7 @@ const Blog = ({ articles }) => {
                 state: { article }  // Pass the article data as state
               }}
             >
-              Read More
+             Read More
             </Link>
           </div>
         ))}

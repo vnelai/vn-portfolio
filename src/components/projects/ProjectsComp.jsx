@@ -7,9 +7,9 @@ function ProjectsComp({ projects }) {
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h1> {projects[0].title.split(" - ").map((part, index) => (
+            <h2> {projects[0].title.split(" - ").map((part, index) => (
           <span key={index}>{part}<br /></span>
-        ))}</h1>
+        ))}</h2>
             <img src={project.image} alt={project.title} />
             <p>{project.description}</p>
 

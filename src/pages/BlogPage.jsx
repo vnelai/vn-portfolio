@@ -11,10 +11,8 @@ const articles = [
 function BlogPage() {
   return (
     <div className="blog-page">
-      <h1>My Tech Blog</h1>
-      <h2 style={{ marginTop: '5rem',  textAlign: 'center'  }}>Blog posts are coming soon. Stay tuned!</h2>
       {/* Passing the articles as a prop to the Blog component */}
-      {/* <Blog articles={articles}/>  */}
+      <Blog articles={articles}/> 
     </div>
   );
 };
