@@ -5,7 +5,9 @@ import StayConnected from '../components/stay-connected/StayConnected';
 function Contact() {
   return (
     <div>
-      <ContactForm/>
+      <div className="contact-form">
+        <ContactForm />
+      </div>
       <StayConnected/>
     </div>
   )

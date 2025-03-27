@@ -25,12 +25,12 @@ function ContactForm() {
     };
 
   return (
-    <div>
+    <div className='contact-form-div'>
         <h1>Let's Connect</h1>
         {submitted ? (
             <p className="thank-you">Thank you for reaching out! I'll get back to you soon.</p>
         ) : (
-            <form onSubmit={handleSubmit} className='contact-form'>
+            <form onSubmit={handleSubmit} className='form'>
                 <label htmlFor="name"> Name:</label>
                 <input type="text" name="name" id='name' onChange={handleChange} value={formData.name} required />
                 
