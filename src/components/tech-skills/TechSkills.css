@@ -42,7 +42,6 @@
   margin-bottom: 1rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 @keyframes scrollSkills {
@@ -57,4 +56,23 @@
 /* Dark Mode Styling */
 body.dark .skill-item {
 background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 1.5rem; /* Adjust title size */
+    margin-bottom: 1rem;
+  }
+
+  .skill-item i {
+    font-size: 1.5rem; /* Reduce icon size */
+  }
+
+  .skill-item {
+    font-size: 1.9rem; /* Adjust font size of text */
+    min-width: 8.75rem;
+    padding: 0.5rem 1rem;
+  }
+
 }
