@@ -16,11 +16,34 @@
 }
 
 .about-image img {
-  width: 250px;
+  width: 15.6rem;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 h1 {
   font-size: 2rem;
+}
+
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack the text and image */
+    align-items: center; /* Center content */
+  }
+  
+  .about-text {
+    text-align: center; /* Center the text */
+    margin-bottom: 1rem; /* Add space between text and image */
+  }
+
+  .about-image img {
+    width: 200px; /* Make the image smaller on smaller screens */
+    margin-top: 1rem; /* Space between text and image */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust title size */
+  }
 }

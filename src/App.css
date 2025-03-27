@@ -6,6 +6,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.main-content {
+  margin-top: 5rem;
+}
+
 /* light and dark mode styles */
 body.dark {
   background-color: rgb(16, 15, 15);
