@@ -109,7 +109,9 @@ body.light .menu-container {
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center; /* Centers vertically*/
+    text-align: center;
     visibility: hidden; /* Hide the menu by default */
     opacity: 0; /* Make it invisible */
     transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition with potential transform */
