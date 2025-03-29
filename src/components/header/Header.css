@@ -180,6 +180,11 @@ body.light .menu-container {
     background-color: rgba(95, 63, 138); /* Solid background */
   }
   
+  /* Stop menu from scrolling when active */
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 
 /* Desktop Styling: Styles for screens larger than 768px */

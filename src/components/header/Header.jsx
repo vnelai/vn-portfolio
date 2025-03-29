@@ -4,9 +4,11 @@ import "./Header.css";
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle menu open/close
-  };
+
+const toggleMenu = () => {
+  setIsMenuOpen(!isMenuOpen); // Toggle menu open/close
+  document.body.classList.toggle("no-scroll", !isMenuOpen); // Prevent scrolling when menu is open
+};
 
   return (
     <header>
