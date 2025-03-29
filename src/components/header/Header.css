@@ -105,9 +105,8 @@ body.light .menu-container {
     z-index: 1100;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Centers vertically*/
-    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start; /* Centers vertically*/
     
     /* Initial menu state */
     opacity: 0; /* Initially invisible */
@@ -133,19 +132,26 @@ body.light .menu-container {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .menu li {
-    margin: 10px 0;
+   margin: 2rem 5rem 5rem 4rem;
   }
 
   .menu a {
     text-decoration: none;
-    font-size: 1.13rem;
+    font-size: 3rem;
     font-weight: 700;
-    position: relative; /* To position the underline */
-    margin: 0.5rem 1rem; /* Add horizontal space */
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Arial',sans-serif;
+    transition: letter-spacing 0.3s ease; /* Smoother transition */
+  }
+
+  .menu a:hover {
+    font-stretch: 40%;
+    letter-spacing: 0.3rem;
   }
 
   .menu a::after {
