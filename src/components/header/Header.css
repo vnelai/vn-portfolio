@@ -111,11 +111,8 @@ body.light .menu-container {
     
     /* Initial menu state */
     opacity: 0; /* Initially invisible */
-    transform: translateX(100%); /* Start off-screen to the right */
-    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
-  }
-  section.projects.component {
-    margin-top: 5rem; /* Adjust this value if needed */
+    transform: translateX(30%); /* Start off-screen to the right */
+    transition: opacity 0.1s ease, transform 0.3s ease;
   }
 
   /* Active menu container (displayed when menu is open) */
