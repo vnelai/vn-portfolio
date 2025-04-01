@@ -88,7 +88,7 @@ body.dark .hero-section {
   font-size: 1rem;
   font-weight: bold;
   transition: transform 0.5s ease-in-out, background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
 }
 
 .hero-btn:hover {
@@ -124,12 +124,14 @@ body.dark .hero-btn {
   }
 
   .hero-btns-div {
-    flex-direction: column;
-    gap: 1rem; /* Reduce space between buttons */
+    flex-direction: center;
+    gap: 1.5rem; /* Reduce space between buttons */
+    align-items: center;
   }
 
   .hero-btn {
     padding: 0.5rem 1rem; /* Smaller buttons on mobile */
     font-size: 0.9rem;
+
   }
 }
