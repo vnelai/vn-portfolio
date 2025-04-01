@@ -1,6 +1,7 @@
 /* Hero Section Styling */
 .hero-section {
   position: relative;
+  top: -0.25rem;
   width: 100%; /* Full width */
   padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
   text-align: center;
