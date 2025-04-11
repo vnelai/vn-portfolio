@@ -18,7 +18,7 @@
 
 /* Dark Mode Background */
 body.dark .hero-section {
-  background-image: url('/pexels-anniroenkae-3109807.jpg');
+  background-image: url("/pexels-anniroenkae-3109807.jpg");
 }
 
 .hero-section::before {
@@ -42,10 +42,10 @@ body.dark .hero-section {
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
-  font-family:"Poppins";
+  font-family: "Poppins";
   letter-spacing: 2px; /* Added spacing for a more modern look */
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 .hero-content h2 {
@@ -73,7 +73,6 @@ body.dark .hero-section {
   margin-top: 1.5rem;
 }
 
-
 .hero-btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -88,7 +87,7 @@ body.dark .hero-section {
   font-size: 1rem;
   font-weight: bold;
   transition: transform 0.5s ease-in-out, background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .hero-btn:hover {
@@ -101,13 +100,10 @@ body.dark .hero-section {
   margin-right: 8px; /* Space between icon and text */
 }
 
-
 /* Dark Mode Styling */
 body.dark .hero-btn {
   background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
 }
-
-
 
 /* Mobile adjustment for hero section */
 @media (max-width: 768px) {
@@ -132,6 +128,13 @@ body.dark .hero-btn {
   .hero-btn {
     padding: 0.5rem 1rem; /* Smaller buttons on mobile */
     font-size: 0.9rem;
+    cursor: pointer;
+    transform: none !important;
+    transition: none !important;
 
+    .hero-btns-div a:hover,
+    .hero-btns-div .hero-btn:hover {
+      cursor: pointer;
+    }
   }
 }

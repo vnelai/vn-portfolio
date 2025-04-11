@@ -128,6 +128,10 @@ body.light .menu-container {
     pointer-events: none; /* Disable interactions when hidden */
   }
 
+  .menu-container:not(.active) {
+    pointer-events: none;
+  }
+
   .menu ul {
     list-style: none;
     margin: 0;
