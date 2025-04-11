@@ -9,31 +9,32 @@ function Journey({ isDarkMode }) {
         <div className="about-text">
           <h1>My Journey</h1>
           <p>
-            I started my journey in Greece, and after high school, I moved to
-            New York to pursue a career in medicine. I completed my pre-med
-            bachelor's with a 3.93 GPA, encouraged by my family’s hopes for me
-            to follow a stable, respected career. However, while balancing
-            school, multiple jobs, and caring for my younger siblings, I
-            realized that continuing to medical school was no longer the right
-            path for me.
+          Versatile and driven, I&apos;m a software engineer with a strong foundation
+          in full-stack development (MERN, JavaScript) and a cybersecurity enthusiast 
+          passionate about identifying vulnerabilities and securing systems. I thrive 
+          on the challenge of uncovering weaknesses in software and infrastructure while 
+          building secure, scalable solutions. After graduating as valedictorian from an 
+          intensive software engineering bootcamp, I&apos;ve continued to sharpen my skills through
+          freelance projects, Capture the Flag competitions, and hands-on labs like TryHackMe.
           </p>
           <p>
-            From leading teams in healthcare, retail, and the music industry to
-            diving deep into data, cybersecurity, and software engineering, I
-            found my true calling in tech. Once I stepped into this world, I
-            couldn’t stop learning. I love problem-solving, troubleshooting, and
-            continuously improving—every challenge is a chance to grow.
-            Cybersecurity excites me because it feels like solving puzzles and
-            unraveling mysteries, and I even play Capture the Flag competitions
-            for fun!
+          My journey began in science, but curiosity and adaptability led me into tech—where 
+          I thrive at the intersection of problem-solving and innovation. I&apos;m energized by 
+          environments where I can apply what I learn, explore new technologies, and collaborate 
+          to solve meaningful challenges. With leadership experience across multiple industries, 
+          I bring not only technical expertise but also business acumen, strategic thinking, and 
+          a collaborative mindset. I understand how to deliver tech solutions that drive real business impact.
           </p>
           <p>
-            Graduating as valedictorian from my software engineering bootcamp
-            was a proud milestone. Now, with certifications in cybersecurity,
-            cloud computing on my radar, and a strong foundation in software
-            development, I’m ready for my first tech role. My next goal? To grow
-            as an engineer and cybersecurity professional while pursuing a
-            master’s in computer science.
+          I hold certifications in CompTIA A+, Network+, Security+, and AWS Cloud Practitioner, 
+          and I&apos;m currently preparing for the AWS Security Specialty to deepen my expertise in 
+          cloud security. Whether I&apos;m writing clean code, debugging APIs, or hardening infrastructure, 
+          I stay focused on creating value through analytical thinking, secure practices, and a grounded, 
+          get-it-done approach.
+          </p>
+          <p>
+            Let&apos;s connect if you&apos;re looking for someone who&apos;s passionate, reliable, and always leveling up
+            —whether it&apos;s for a project, freelance opportunity, or a security-focused build.
           </p>
         </div>
 
