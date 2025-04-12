@@ -8,6 +8,7 @@ import BlogPage from "./pages/BlogPage";
 import Article from "././components/article/Article"; // Full Article Component
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Footer from "./components/footer/Footer";
 // Import Styling
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -52,6 +53,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer/>
     </>
   );
 }
