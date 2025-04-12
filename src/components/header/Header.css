@@ -15,7 +15,7 @@ header {
 /* Brand Name */
 .logo a {
   font-family: "Pacifico", cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -80,16 +80,11 @@ body.light .menu-container {
     top: 1rem;
   }
 
-  /* Brand Name / Home Button (Centered) */
-  .logo a {
-    font-size: 2rem;
-  }
-
   /* Hamburger Menu - Display on mobile */
   .menu-toggle {
     display: block; /* Visible on mobile */
     cursor: pointer;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -99,7 +94,7 @@ body.light .menu-container {
   /* Menu items */
   .menu-container {
     position: fixed;
-    top: 4.7rem;
+    top: 3.9rem;
     right: 0;
     width: 100%;
     height:100vh;
@@ -151,7 +146,7 @@ body.light .menu-container {
 
   .menu a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
@@ -171,7 +166,7 @@ body.light .menu-container {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: currentColor; /* Use the current text color for the underline */
+    background-color: currentColor; /* Current text color for the underline */
     transform: scaleX(0); /* Initially no underline */
     transform-origin: bottom right;
     transition: transform 0.3s ease-out; /* Smoother transition */
@@ -230,7 +225,7 @@ body.light .menu-container {
 
   .menu a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: inherit;
     font-weight: 800;
     position: relative;
