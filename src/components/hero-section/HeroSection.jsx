@@ -7,13 +7,10 @@ function HeroSection() {
     <section className='hero-section'>
         <div className='hero-content'>
             <h1>Hi, I'm Virginia</h1>
-            <h2>Software Engineer & Tech Enthusiast</h2>
+            <h2>Software Engineer | Cybersecurity Enthusiast</h2>
             <p>
-                Passionate about building secure, user-friendly websites 
-                and applications.
-            </p>
-            <p>
-            Skilled in full-stack development with MongoDB, Express, React, Node.js.
+            Passionate about finding vulnerabilities and building 
+            secure, user-friendly web applications.
             </p>
             <div className='hero-btns-div'>
               <a 
