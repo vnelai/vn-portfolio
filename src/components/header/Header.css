@@ -17,6 +17,12 @@ header {
   font-family: "Pacifico", cursive;
   font-size: 2rem;
   text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.logo a:hover {
+  transform: scale(1.07);
 }
 
 /* Mode Toggle */
@@ -255,4 +261,5 @@ body.light .menu-container {
   .menu-toggle {
     display: none;
   }
+
 }
