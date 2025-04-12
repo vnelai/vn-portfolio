@@ -15,7 +15,7 @@ function ProjectsComp({ projects }) {
 
             {/* Key Technologies Section */}
             <div className="project-technologies">
-              <strong>Key Technologies:</strong>
+              <strong>Key Technologies</strong>
               <ul>
                 {project.technologies.map((tech, techIndex) => (
                   <li key={techIndex}>{tech}</li>
