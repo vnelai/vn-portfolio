@@ -1,10 +1,10 @@
 .skills-section {
-  margin: 20px 0;
+  margin: 1.25rem 0;
   overflow: hidden; /* Keeps overflow hidden */
 }
 
 .skills-section.software-skills {
-  margin-bottom: 30px; /* Space below Software Skills section */
+  margin-bottom: 1.88rem; /* Space below Software Skills section */
 }
 
 .skills-container {
@@ -16,7 +16,7 @@
 
 .skills-wrapper {
   display: flex;
-  gap: 15px;
+  gap: 0.94rem;
   animation: scrollSkills 50s linear infinite;
   white-space: nowrap;
   position: relative;
@@ -28,17 +28,21 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: white;
-  background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient from blue to darker blue */
-  padding: 10px 20px;
-  border-radius: 12px;
-  min-width: 160px;
+  background: linear-gradient(
+    45deg,
+    #007bff,
+    #0056b3
+  ); /* Gradient from blue to darker blue */
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  min-width: 7rem;
   text-align: center;
 }
 
 .skills-section h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   width: 100%;
   text-align: center;
@@ -55,24 +59,23 @@
 
 /* Dark Mode Styling */
 body.dark .skill-item {
-background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
+  background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .skills-section h2 {
-    font-size: 1.5rem; /* Adjust title size */
+    font-size: 1.1rem; /* Adjust title size */
     margin-bottom: 1rem;
   }
 
   .skill-item i {
-    font-size: 1.5rem; /* Reduce icon size */
+    font-size: 1.1rem; /* Reduce icon size */
   }
 
   .skill-item {
-    font-size: 1.9rem; /* Adjust font size of text */
-    min-width: 8.75rem;
+    font-size: 1.1rem; /* Adjust font size of text */
+    min-width: 6rem;
     padding: 0.5rem 1rem;
   }
-
 }
