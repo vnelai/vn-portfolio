@@ -20,6 +20,10 @@
   transform: scale(1.2);
 }
 
+.footer-left {
+  font-weight: bold;
+}
+
 /* Dark mode */
 body.dark .footer {
   background-color: rgba(95, 63, 138, 0.4);

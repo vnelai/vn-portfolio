@@ -1,9 +1,8 @@
 /* Hero Section Styling */
 .hero-section {
   position: relative;
-  top: -0.25rem;
+  top: -1.1rem;
   width: 100%; /* Full width */
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
   text-align: center;
   background-image: url("/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg");
   background-size: cover; /* Ensure the image covers the section */
@@ -14,6 +13,7 @@
   padding: 3rem 2rem;
   color: white; /* Make text white by default for contrast */
   box-sizing: border-box; /* Ensure padding is included in width/height */
+  margin-bottom:-1.2rem;
 }
 
 /* Dark Mode Background */
