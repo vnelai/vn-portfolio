@@ -4,12 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
+}
+
+.stay-connected h1 {
+  font-size: 1.3rem;
+}
+
+.stay-connected h2 {
+  font-size: 1.1rem;
 }
 
 /* Social Media Home Page Icons */
 .social-media-div {
-    margin-top: 30px;
+  margin-top: 1rem;
   }
   
   .sm-button i {
@@ -19,7 +27,7 @@
     line-height: 3.5rem;
     width: 3.5rem;
     height: 3.5rem;
-    margin: 10px 10px 20px;
+    margin: 0.63rem 0.63rem 1.25rem;
     text-align: center;
     display: inline-block;
     font-size: inherit;
@@ -33,7 +41,7 @@
   .sm-button {
     text-decoration: none;
     font-size: 2.3rem;
-    margin: 8px;
+    margin: 0.5rem;
   }
   
   .github i {
@@ -47,36 +55,23 @@
   .google i {
     background-color: #ea4336;
   }
-  
-  .facebook i {
-    background-color: #3b5999;
-  }
-  
-  .instagram i {
-    background-color: #c13585;
-  }
-  
-  .twitter i {
-    background-color: #1da1f3;
-  }
-  
-  /* .medium i {
-    background-color:#334
-  } */
-  
-  .youtube i {
-    background-color: #ff0001;
-    color: white;
-  }
-  
-  .facebook i:hover,
+
   .github i:hover,
   .google i:hover,
-  .instagram i:hover,
-  .linkedin i:hover,
-  .medium i:hover,
-  .twitter i:hover,
-  .youtube i:hover {
+  .linkedin i:hover {
     background-color: #000;
   }
   
+
+  @media (max-width: 768px) {
+    .stay-connected h2 {
+      font-size: 0.95rem;
+    }
+
+    .sm-button i {
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      font-size: 1.5rem;
+    }
+  }

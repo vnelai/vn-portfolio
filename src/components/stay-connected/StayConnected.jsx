@@ -23,18 +23,6 @@ function StayConnected() {
         >
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
-        {/* <a href="https://www.youtube.com/@StarlightLabsX" class="sm-button youtube" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-youtube"></i>
-                </a> 
-                <a href="https://www.facebook.com/StarlightLabsX/" class="sm-button facebook" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/starlightlabsx/" class="sm-button instagram" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://x.com/StarlightLabs_X" class="sm-button twitter" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-twitter"></i>
-                </a> */}
         <a
             href="mailto:vnelai01@gmail.com"
             class="sm-button google"
