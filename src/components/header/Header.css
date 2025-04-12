@@ -47,7 +47,7 @@ body.dark .menu-container {
 }
 
 .dark header {
-  background-color: rgba(95, 63, 138, 0.4); /* Slightly transparent purple */
+  background-color: rgba(95, 63, 138); 
 }
 
 /* Specific styles for header and menu when in light mode */
