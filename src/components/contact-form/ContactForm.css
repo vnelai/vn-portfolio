@@ -95,13 +95,18 @@ body.dark .form-btn {
 /* Responsive */
 @media (max-width: 768px) {
     .form {
-        margin: 0.9rem;
-        padding: 1.25rem;
+        margin: 3rem;
+        padding: 1.5rem;
         max-width: 100%;
+    }
+
+    .form label {
+        margin:0;
     }
 
     input, textarea {
         font-size: 1.13rem;
+        margin:0;
     }
 
     button {
