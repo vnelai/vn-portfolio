@@ -2,17 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.3rem;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  background-color: white;
+  font-size: 1.3rem;
+  background-color: #264653;
   color: black;
 }
 
 .footer a {
-  color: inherit;
+  color: white;
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: transform 0.3s ease;
 }
 
@@ -22,6 +22,7 @@
 
 .footer-left {
   font-weight: bold;
+  color: white;
 }
 
 /* Dark mode */
@@ -35,11 +36,11 @@ body.dark .footer {
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 1rem;
+    font-size: 1.1rem;
   }
-  
+
   .footer a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }

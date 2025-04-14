@@ -1,0 +1,78 @@
+/* FeaturedContent.css */
+
+.featured-content {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .featured-content.fade-in {
+    opacity: 1;
+  }
+  
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  /* Shared styles for both teaser blocks */
+  .featured-teaser {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: 0 auto;
+    width:100%
+  }
+
+  /* Alternate layout for second teaser (image right) */
+  .featured-teaser:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Image styling */
+  .featured-teaser img {
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    flex: 1;
+  }
+  
+  /* Text block layout */
+  .featured-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    flex: 1;
+    max-width: 37.5rem;
+  }
+  
+/* Link buttons */
+.featured-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 80%;
+    max-width: 8rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #2a9d8f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+  
+.featured-link:hover {
+    background-color:#264653;
+}
+  

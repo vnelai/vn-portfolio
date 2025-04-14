@@ -3,13 +3,13 @@ header {
   position: fixed;
   top: 0;
   z-index: 1001; /* Stay above other content */
-  background-color: rgb(255, 255, 255); 
+  background-color: #264653; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 0.63rem 1.25rem;
 }
 
 /* Brand Name */
@@ -19,6 +19,7 @@ header {
   text-decoration: none;
   transition: transform 0.3s ease;
   display: inline-block;
+  color:white !important;
 }
 
 .logo a:hover {
@@ -32,7 +33,6 @@ header {
   outline: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: inherit;
   transition: transform 0.3s ease;
 }
 
@@ -60,7 +60,7 @@ body.dark .menu-container {
 body.light .logo a,
 body.light .menu a,
 body.light .menu-container {
-  color: black;
+  color: white;
 }
 
 /* Mobile styling: for screens smaller than 768px */
@@ -70,7 +70,7 @@ body.light .menu-container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 6px;
+    padding: 0.38rem;
   }
 
   /* Light/Dark Mode Toggle (Left) */
@@ -88,6 +88,7 @@ body.light .menu-container {
     right: 1rem;
     top: 1rem;
     z-index: 1100;
+    color: white;
   }
 
   /* Menu items */
@@ -97,7 +98,7 @@ body.light .menu-container {
     right: 0;
     width: 100%;
     height:100vh;
-    background-color: rgba(255, 255, 255); /* Solid background */
+    background-color: #264653; /* Solid background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,13 +178,10 @@ body.light .menu-container {
     transform-origin: bottom left; /* Animate from left to right */
   }
 
-  .dark header {
+  .dark header, .dark .menu-container {
     background-color: rgba(95, 63, 138); /* Slightly transparent purple */
   }
-  .dark .menu-container{
-    background-color: rgba(95, 63, 138); /* Solid background */
-  }
-  
+
   /* Stop menu from scrolling when active */
   .no-scroll {
     overflow: hidden;
@@ -225,7 +223,7 @@ body.light .menu-container {
   .menu a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: inherit;
+    color: inherit;   
     font-weight: 800;
     position: relative;
   }
@@ -236,7 +234,7 @@ body.light .menu-container {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* Thickness of underline */
+    height: 0.13rem; /* Thickness of underline */
     background-color: currentColor; /* Matches text color */
     transform: scaleX(0); /* Start hidden */
     transform-origin: left;
