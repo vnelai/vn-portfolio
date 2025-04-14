@@ -17,7 +17,7 @@
 }
 
 .project-card {
-  background: #fff;
+  background: #264653;
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -29,6 +29,7 @@
   justify-content: space-between; /* Ensures links are pushed to the bottom */
   min-height: 31.25rem; /* Fixed height for cards */
   overflow: hidden; /* Ensures no content overflows out of the card */
+  color: white;
 }
 
 .project-card:hover {
@@ -68,9 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   gap:2rem;
-
 }
 
 .project-links a {
@@ -78,7 +77,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-  color: black;
+  color: white;
 }
 
 .project-links a:hover {
@@ -88,7 +87,7 @@
 
 /* Dark Mode Styling */
 body.dark .project-card {
-  background-color: #5f3f8a; /* Dark gray background */
+  background-color: #5f3f8a; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow in dark mode */
 }
 
