@@ -30,17 +30,16 @@
   gap: 0.5rem;
   font-size: 1.3rem;
   color: white;
-  background: linear-gradient(
-    45deg,
-    #007bff,
-    #0056b3
-  ); /* Gradient from blue to darker blue */
+  background: linear-gradient(45deg, #2a9d8f, #237a6e); 
   padding: 0.625rem 1.25rem;
   border-radius: 0.75rem;
   min-width: 7rem;
   text-align: center;
 }
 
+.skill-item:hover {
+  background: #264653;
+}
 .skills-section h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -59,7 +58,11 @@
 
 /* Dark Mode Styling */
 body.dark .skill-item {
-  background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
+  background: linear-gradient(45deg, #7b4c9f, #9c66c1);
+}
+
+body.dark .skill-item:hover {
+  background: rgba(95, 63, 138); 
 }
 
 /* Mobile responsiveness */

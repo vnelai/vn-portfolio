@@ -110,12 +110,12 @@ body.dark .hero-section {
   height: 1.5rem;
   font-size: 1.1rem;
   border-radius: 3rem;
-  background-color: #2a9d8f;
+  background-color: #2a9d8f;  
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .hero-btn:hover {
@@ -129,11 +129,12 @@ body.dark .hero-section {
 
 /* Dark Mode Styling */
 .dark .hero-btn {
-  background-color: #7b4c9f;
+  background-color: #7b4c9f;  
+  transition: background-color 0.3s ease;
 }
 
 .dark .hero-btn:hover {
-  background-color: rgba(95, 63, 138) ;
+  background: #5f3f8a;
 }
 
 /* Mobile adjustment for hero section */

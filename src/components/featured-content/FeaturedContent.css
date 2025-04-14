@@ -75,15 +75,17 @@
 .featured-link:hover {
     background-color:#264653;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease; 
 }
 
 /* Dark mode */
 .dark .featured-link {
     background-color: #7b4c9f;
+    transition: background-color 0.3s ease;
 }
 
 .dark .featured-link:hover {
-    background-color: rgba(95, 63, 138) ;
+    background-color: #5f3f8a ;
 }
 
 /* Mobile styling: for screens smaller than 768px */
