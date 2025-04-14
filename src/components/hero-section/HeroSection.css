@@ -115,7 +115,12 @@ body.dark .hero-section {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-btn:hover {

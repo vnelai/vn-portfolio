@@ -42,8 +42,9 @@ function ContactForm() {
                 
                 <label htmlFor="message"> Message:</label>
                 <textarea name="message" id='message' onChange={handleChange} value={formData.message} required></textarea>
-                
-                <button type="submit" className='form-btn'>Send</button>
+                <div className='btn-div'>
+                    <button type="submit" className='form-btn'>Send</button>
+                </div> 
             </form>
         )}
     </div>
