@@ -3,9 +3,9 @@
   position: relative;
   width: 100%;
   text-align: center;
-  background: linear-gradient(45deg, #4a6572, #5f8291) ; /* Animated gradient (de saturated teal to blue)*/
+  background: linear-gradient(45deg, #264653, #2f5f6d); /* Animated gradient (Dark Teal to Slightly Lighter Teal:)*/
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@
 body.dark .hero-section {
   background: linear-gradient(45deg, rgb(20, 20, 20), rgba(40, 40, 40, 0.8)); /* dark mode gradient */
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
 }
 
 .hero-section::before {
