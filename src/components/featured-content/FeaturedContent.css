@@ -59,20 +59,22 @@
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     width: 80%;
-    max-width: 8rem;
-    height: 1.5rem;
+    max-width: 9rem;
     font-size: 1rem;
-    font-weight: 600;
+    height: 1.5rem;
+    font-weight: bold;
     background-color: #2a9d8f;
     color: #fff;
     text-decoration: none;
-    border-radius: 0.5rem;
+    border-radius: 3rem;
     transition: background-color 0.3s ease;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
   
 .featured-link:hover {
     background-color:#264653;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Dark mode */

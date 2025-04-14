@@ -1,24 +1,40 @@
 /* Hero Section Styling */
 .hero-section {
   position: relative;
-  top: -1.1rem;
-  width: 100%; /* Full width */
+  width: 100%;
   text-align: center;
-  background-image: url("/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg");
-  background-size: cover; /* Ensure the image covers the section */
-  background-position: center; /* Center the image */
+  background: linear-gradient(45deg, #4a6572, #5f8291) ; /* Animated gradient (de saturated teal to blue)*/
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 2rem;
-  color: white; /* Make text white by default for contrast */
-  box-sizing: border-box; /* Ensure padding is included in width/height */
-  margin-bottom:-1.2rem;
+  padding: 8rem 2rem;
+  color: white;
+  box-sizing: border-box;
+  min-height: 70vh; 
+  margin-bottom: 0;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Dark Mode Background */
 body.dark .hero-section {
-  background-image: url("/pexels-anniroenkae-3109807.jpg");
+  background: linear-gradient(45deg, rgb(20, 20, 20), rgba(40, 40, 40, 0.8)); /* dark mode gradient */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
 }
 
 .hero-section::before {
@@ -28,35 +44,35 @@ body.dark .hero-section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 1); /* Dark overlay */
-  z-index: -1; /* Place the overlay behind the content */
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: -1;
 }
 
 /* Hero Text Content Styling */
 .hero-content h1 {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Poppins";
-  letter-spacing: 2px; /* Added spacing for a more modern look */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin-bottom: 0;
 }
 
 .hero-content h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .hero-content p {
-  font-size: 1rem;
+  font-size: 1.1rem; 
   font-weight: 500;
 }
 
 .hero-content h1,
 .hero-content h2,
 .hero-content p {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Hero Section CTA buttons Styling */
@@ -64,40 +80,39 @@ body.dark .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Space between buttons */
-  margin-top: 1.5rem;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .hero-btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  max-width: 9rem;
+  height: 1.5rem;
+  font-size: 1rem;
   border-radius: 3rem;
-  background: linear-gradient(
-    45deg,
-    #007bff,
-    #0056b3
-  ); /* Gradient from blue to darker blue */
+  background-color: #2a9d8f;
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
   font-weight: bold;
-  transition: transform 0.5s ease-in-out, background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .hero-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.1) skew(10deg, 5deg);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow on hover */
+  background-color: #264653;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 .hero-btn i {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px;
 }
 
 /* Dark Mode Styling */
 body.dark .hero-btn {
-  background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient */
+  background: linear-gradient(45deg, #9b59b6, #8e44ad);
 }
 
 /* Mobile adjustment for hero section */
@@ -116,20 +131,15 @@ body.dark .hero-btn {
 
   .hero-btns-div {
     flex-direction: center;
-    gap: 1.5rem; /* Reduce space between buttons */
+    gap: 1.5rem;
     align-items: center;
   }
 
   .hero-btn {
-    padding: 0.5rem 1rem; /* Smaller buttons on mobile */
+    padding: 0.5rem 1rem;
     font-size: 0.9rem;
     cursor: pointer;
     transform: none !important;
-    transition: none !important;
-
-    .hero-btns-div a:hover,
-    .hero-btns-div .hero-btn:hover {
-      cursor: pointer;
-    }
-  }
+    transition: none !important; 
+}
 }
