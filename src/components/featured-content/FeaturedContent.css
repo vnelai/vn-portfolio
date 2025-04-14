@@ -2,7 +2,6 @@
 
 .featured-content {
     padding: 2rem;
-    background-color: #f8f9fa;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -75,4 +74,29 @@
 .featured-link:hover {
     background-color:#264653;
 }
-  
+
+/* Dark mode */
+.dark .featured-link {
+    background-color: #7b4c9f;
+}
+
+.dark .featured-link:hover {
+    background-color: rgba(95, 63, 138) ;
+}
+
+/* Mobile styling: for screens smaller than 768px */
+@media (max-width: 768px) {
+    .featured-text h2 {
+        font-size: 1.3rem;
+    }
+    .featured-text p {
+        font-size: 1rem;
+    }
+    .featured-teaser img {
+        max-width: 100%;
+        height:auto;
+    }
+    .featured-text {
+        gap:0.8rem;
+    }
+}    
