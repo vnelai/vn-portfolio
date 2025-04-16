@@ -1,0 +1,40 @@
+.section {
+    padding: 4rem 1.5rem;
+    background-color: #121212; 
+    color: #fff;
+    text-align: center;
+}
+  
+  .section-title {
+    font-size: 2.25rem;
+    color: #E9C46A; 
+    margin-bottom: 2rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #1a6a5a; /* Dark teal card background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .card:hover {
+    background-color: #21867A; /* Hover state with a slightly darker teal */
+    transform: scale(1.05);
+  }

@@ -2,6 +2,7 @@ import React from 'react';
 import Blog from '../components/blog/Blog';
 import HeroBlog from '../components/hero-blog/HeroBlog';
 import FeaturedBlogs from '../components/featured-blogs/FeaturedBlogs';
+import FreelanceBlogs from '../components/freelance-blogs/FreelanceBlogs';
 
 const articles = [
   { id: 1, title: 'How to Build a Secure Web App', excerpt: 'In this post, we will explore...', date: 'March 10, 2025', image: 'link-to-image.jpg' },
@@ -17,6 +18,9 @@ function BlogPage() {
       <HeroBlog />
       {/* Featured posts section */}
       <FeaturedBlogs />
+      {/* Freelance journey section */}
+      <FreelanceBlogs />
+      {/* Blog section displaying all articles */}
       {/* Passing the articles as a prop to the Blog component */}
       <Blog articles={articles}/> 
     </div>
