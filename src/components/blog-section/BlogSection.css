@@ -1,0 +1,36 @@
+.section {
+    padding: 4rem 1.5rem;
+    background-color: #121212; /* Dark background to keep the consistency */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+    color: #E9C46A; /* Accent color from Hero section */
+    margin-bottom: 2rem;
+  }
+  
+  .topic-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+  
+  .topic {
+    background: #2a9d8f; /* Same teal color as the cards */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .topic:hover {
+    background: #21867A; /* Hover state with darker teal */
+    transform: scale(1.05);
+  }
+  
