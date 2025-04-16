@@ -98,7 +98,7 @@ body.dark .hero-section {
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 
 .hero-btn {
@@ -116,11 +116,6 @@ body.dark .hero-section {
   font-weight: bold;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-.btn-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-btn:hover {

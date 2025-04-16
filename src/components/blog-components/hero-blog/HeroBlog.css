@@ -1,41 +1,89 @@
 .hero-section-blog {
-    padding: 4rem 1.5rem;
-    background: #1a1a1a;
-    color: #fff;
-    text-align: center;
+  padding: 5rem 2rem;
+  min-height: 50vh; 
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(45deg, #264653, #2f5f6d); /* Same gradient as home */
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .hero-title-blog {
-    font-size: 2.75rem;
-    margin-bottom: 1rem;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .hero-subtitle-blog {
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .cta-buttons-blog {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .cta-button-blog {
-    background: #2A9D8F;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .cta-button-blog:hover {
-    background: #21867a;
-  }
-  
+}
+
+.hero-section-blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: -1;
+}
+
+/* Dark Mode Background */
+body.dark .hero-section-blog {
+  background: linear-gradient(45deg, rgb(20, 20, 20), rgba(40, 40, 40, 0.8)); /* dark mode gradient */
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.hero-title-blog {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle-blog {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  max-width: 55rem; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cta-buttons-blog {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.cta-button-blog {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  font-weight: bold;
+}
+
+.cta-button-blog:hover {
+  background-color: #264653;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
