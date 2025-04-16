@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroSection from '../components/hero-section/HeroSection';
-import FeaturedContent from '../components/featured-content/FeaturedContent'; 
+import HeroSection from '../components/home-page-components/hero-section/HeroSection';
+import FeaturedContent from '../components/home-page-components/featured-content/FeaturedContent'; 
 
 function Home() {
   return (

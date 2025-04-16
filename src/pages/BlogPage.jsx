@@ -1,9 +1,9 @@
 import React from 'react';
-import Blog from '../components/blog/Blog';
-import HeroBlog from '../components/hero-blog/HeroBlog';
-import FeaturedBlogs from '../components/featured-blogs/FeaturedBlogs';
-import FreelanceBlogs from '../components/freelance-blogs/FreelanceBlogs';
-import BlogSection from '../components/blog-section/BlogSection';
+import Blog from '../components/blog-components/blog/Blog';
+import HeroBlog from '../components/blog-components/hero-blog/HeroBlog';
+import FeaturedBlogs from '../components/blog-components/featured-blogs/FeaturedBlogs';
+import FreelanceBlogs from '../components/blog-components/freelance-blogs/FreelanceBlogs';
+import BlogSection from '../components/blog-components/blog-section/BlogSection';
 
 const articles = [
   { id: 1, title: 'How to Build a Secure Web App', excerpt: 'In this post, we will explore...', date: 'March 10, 2025', image: 'link-to-image.jpg' },
