@@ -12,6 +12,7 @@ function FreelanceBlogs() {
           <div className="card">Freelancer Tools I Use to Stay Productive</div>
           <div className="card">How I Manage Tech Gigs While Still Learning</div>
         </div>
+        <button className="view-all-freelance">View All Freelance</button>
       </section>
     </div>
   );
