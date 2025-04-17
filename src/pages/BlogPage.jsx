@@ -2,7 +2,6 @@ import React from 'react';
 import Blog from '../components/blog-components/blog/Blog';
 import HeroBlog from '../components/blog-components/hero-blog/HeroBlog';
 import FeaturedBlogs from '../components/blog-components/featured-blogs/FeaturedBlogs';
-// import FreelanceBlogs from '../components/blog-components/freelance-blogs/FreelanceBlogs';
 import BlogSection from '../components/blog-components/blog-section/BlogSection';
 
 const articles = [
@@ -19,8 +18,6 @@ function BlogPage() {
       <HeroBlog />
       {/* Featured posts section */}
       <FeaturedBlogs />
-      {/* Freelance journey section */}
-      {/* <FreelanceBlogs /> */}
       {/* Blog section displaying all articles */}
       <BlogSection />
       {/* Passing the articles as a prop to the Blog component */}

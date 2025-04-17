@@ -29,12 +29,14 @@ const HeroBlog = () => {
           >
             🧠 Browse Topics
           </button>
-          <button
-            onClick={() => scrollToSection("freelance")}
-            className="cta-button-blog"
+          <a
+            href="https://discord.gg/qpeRhGs6"
+            className="cta-button-blog community"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            🚀 Follow My Freelance Journey
-          </button>
+            🤝 Join the Community
+          </a>
         </div>
       </div>
     </section>

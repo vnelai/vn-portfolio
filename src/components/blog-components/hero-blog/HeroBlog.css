@@ -96,6 +96,14 @@ body.dark .hero-section-blog {
   background-color: #5f3f8a;
 }
 
+.cta-button-blog .community {
+  text-decoration: none;
+}
+
+a.cta-button-blog.community {
+  text-decoration: none;
+}
+
 /* Mobile adjustment for hero section */
 @media (max-width: 768px) {
   .hero-title-blog {
