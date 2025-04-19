@@ -112,16 +112,14 @@ a.cta-button-blog.community {
   }
 
   .cta-buttons-blog {
-    flex-direction: column;
+    flex-direction: center;
+    gap: 1.5rem;
     align-items: center;
-    gap: 1.2rem;
   }
 
   .cta-button-blog, 
   .cta-button-blog.community {
-    width: 100%;
-    max-width: 19rem;
+    padding: 0.6rem 1.2rem;
     font-size: 1rem;
-    min-width: 19rem;  
   }
 }

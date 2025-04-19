@@ -116,11 +116,8 @@ body.dark .hero-section {
   font-weight: bold;
   margin-top: 0.5rem;
   text-decoration: none;
-
   width: 80%;
   max-width: 10rem;
-  
-
  }
 
 .hero-btn:hover {
@@ -160,8 +157,6 @@ body.dark .hero-section {
 
   .hero-btn {
     padding: 0.6rem 1.2rem;
-    font-size: 1rem; 
-    cursor: pointer;
-    max-width: 9rem;
+    font-size: 1rem;   
 }
 }
