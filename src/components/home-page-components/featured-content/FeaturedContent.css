@@ -15,6 +15,21 @@
     flex-direction: column;
     gap: 4rem;
   }
+
+  /* Section title styling */
+  .featured-text  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Title */
+  .featured-text h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0rem;
+  }
   
   /* Shared styles for both teaser blocks */
   .featured-teaser {
@@ -91,7 +106,7 @@
 /* Mobile styling: for screens smaller than 768px */
 @media (max-width: 768px) {
     .featured-text h2 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
     .featured-text p {
         font-size: 1rem;
