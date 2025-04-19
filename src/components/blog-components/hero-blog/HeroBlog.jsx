@@ -11,11 +11,8 @@ const HeroBlog = () => {
     <section className="hero-section-blog">
       <div className="hero-content-blog">
         <h1 className="hero-title-blog">Cyber & Code Journal</h1>
-        <h2 className="hero-subtitle-blog">
-          I’m Virginia (aka V⚡, powered up for tech), a cybersecurity and
-          software engineering explorer. This blog is my digital trail —
-          breadcrumbs of every win, mistake, and mission as I break into tech.
-        </h2>
+        <h2>I’m Virginia (aka V⚡), a cybersecurity + software engineer on a mission to break into tech.</h2>
+        <p>This blog is my digital trail — wins, flops, and lessons from the front lines of code and cyber.</p>
         <div className="cta-buttons-blog">
           <button
             onClick={() => scrollToSection("featured")}
