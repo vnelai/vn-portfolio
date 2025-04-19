@@ -70,12 +70,12 @@ body.dark .hero-section-blog {
 }
 
 .cta-button-blog {
+  display: inline-block; 
   background-color: #2a9d8f;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
-  border-radius: 3rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -96,12 +96,9 @@ body.dark .hero-section-blog {
   background-color: #5f3f8a;
 }
 
-.cta-button-blog .community {
-  text-decoration: none;
-}
-
 a.cta-button-blog.community {
   text-decoration: none;
+  display: inline-block;
 }
 
 /* Mobile adjustment for hero section */
@@ -120,9 +117,11 @@ a.cta-button-blog.community {
     gap: 1.2rem;
   }
 
-  .cta-button-blog {
+  .cta-button-blog, 
+  .cta-button-blog.community {
     width: 100%;
     max-width: 19rem;
     font-size: 1rem;
+    min-width: 19rem;  
   }
 }
