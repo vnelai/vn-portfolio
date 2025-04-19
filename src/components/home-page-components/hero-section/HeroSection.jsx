@@ -42,10 +42,13 @@ function HeroSection() {
             rel='noopener noreferrer'
             className='hero-btn'
           >
-            <i className='fa-solid fa-download'></i> Get Resume
+            📄 Get Resume
           </a>
           <a href='/projects' className='hero-btn'>
-            <i className='fa-solid fa-folder-open'></i> View Projects
+            💻 View Projects
+          </a>
+          <a href='/blog' className='hero-btn'>
+            ✍️ View Blog
           </a>
         </div>
       </div>
