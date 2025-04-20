@@ -10,7 +10,7 @@ const HeroBlog = () => {
   return (
     <section className="hero-section-blog">
       <div className="hero-content-blog">
-        <h1 className="hero-title-blog">Cyber & Code Journal</h1>
+        <h1 className="hero-title-blog">Cyber Tech Journal</h1>
         <h2>I’m Virginia (aka V⚡), a cybersecurity + software engineer on a mission to break into tech.</h2>
         <p>This blog is my digital trail — wins, flops, and lessons from the front lines of code and cyber.</p>
         <div className="cta-buttons-blog">

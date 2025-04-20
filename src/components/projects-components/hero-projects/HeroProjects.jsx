@@ -5,7 +5,7 @@ function HeroProjects() {
   return (
     <section className="hero-section-projects">
       <div className="hero-content-projects">
-        <h1 className="hero-title-projects">Code & Security Projects</h1>
+        <h1 className="hero-title-projects">Secure Code Lab</h1>
         <p className="hero-subtitle-projects">
           Building secure, innovative web experiences with a focus on full-stack
           development and cybersecurity.

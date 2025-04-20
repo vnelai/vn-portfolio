@@ -1,0 +1,121 @@
+.hero-section-about {
+    height: 100vh;
+    padding: 6rem 2rem;
+    position: relative;
+    text-align: center;
+    background: #2c4e5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+    /* Dark Mode Background */
+    .dark .hero-section-about {
+      background: #2e234f;
+    }
+  
+  .hero-section-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .hero-content-about {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-content-about > * {
+    margin-bottom: 3rem;
+  }
+  
+  .hero-title-about {
+    font-size: 2.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-subtitle-about {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    max-width: 55rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .cta-buttons-about {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
+  
+  .cta-button-about {
+    display: inline-block;
+    background-color: #287371;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  .cta-button-about:hover {
+    background-color: #264653;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .dark .cta-button-about {
+    background-color: #7b4c9f;
+  }
+  
+  .dark .cta-button-about:hover {
+    background-color: #5f3f8a;
+  }
+  
+  a.cta-button-about.connect {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /* Mobile adjustment for hero section */
+  @media (max-width: 768px) {
+    .hero-title-about {
+      font-size: 2.2rem;
+    }
+  
+    .hero-subtitle-about {
+      font-size: 1.4rem;
+    }
+  
+    .cta-buttons-about {
+      flex-direction: center;
+      gap: 1.5rem;
+      align-items: center;
+    }
+  
+    .cta-button-about,
+    .cta-button-about.connect {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
+  
