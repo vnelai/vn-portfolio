@@ -34,6 +34,7 @@ header {
   font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.3s ease;
+  color: #fff;
 }
 
 .mode-toggle button:hover {
@@ -48,7 +49,8 @@ header {
 /* Specific styles for header and menu when in dark mode */
 body.dark .logo a,
 body.dark .menu a,
-body.dark .menu-container {
+body.dark .menu-container,
+body.dark .mode-toggle button {
   color: white;
 }
 
