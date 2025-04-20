@@ -1,16 +1,16 @@
 import React from 'react';
-import ContactForm from '../components/contact-form/ContactForm';
-import StayConnected from '../components/stay-connected/StayConnected';
+import ContactForm from '../components/contact-components/contact-form/ContactForm';
+import StayConnected from '../components/contact-components/stay-connected/StayConnected';
+import HeroContact from '../components/contact-components/hero-contact/HeroContact';
 
 function Contact() {
   return (
-    <div>
-      <div className="contact-form">
-        <ContactForm />
-      </div>
+    <>
+      <HeroContact />
+      <ContactForm />
       <StayConnected/>
-    </div>
-  )
+    </>
+  );
 }
 
 export default Contact;

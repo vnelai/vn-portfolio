@@ -1,20 +1,15 @@
 import React from "react";
-import "./HeroBlog.css";
+import "./HeroContact.css";
 
-const HeroBlog = () => {
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
+const HeroContact = () => {
   return (
-    <section className="hero-section-blog">
-      <div className="hero-content-blog">
-        <h1 className="hero-title-blog">Cyber Tech Journal</h1>
-        <h2>My Journey in Code, Cybersecurity, and Beyond</h2>
-        <p>This blog is my digital trail — wins, flops, and lessons from the front lines of code and cyber.</p>
+    <section className="hero-section-contact">
+      <div className="hero-content-contact">
+        <h1 className="hero-title-contact">Protect Innovate Empower</h1>
+        <h2>Let’s Connect & Build Secure Solutions</h2>
+        <p>I build secure apps, defend against threats, and teach others to do the same. Let’s safeguard the web, together.</p>
         <div className="cta-buttons-blog">
-          <button
+        <button
             onClick={() => scrollToSection("featured")}
             className="cta-button-blog"
           >
@@ -40,5 +35,4 @@ const HeroBlog = () => {
   );
 };
 
-export default HeroBlog;
-
+export default HeroContact;
