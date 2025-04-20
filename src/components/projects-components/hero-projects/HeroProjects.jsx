@@ -4,7 +4,7 @@ import "./HeroProjects.css";
 function HeroProjects() {
   return (
     <section className="hero-section-projects">
-      <div>
+      <div className="hero-content-projects">
         <h1 className="hero-title-projects">Code & Security Projects</h1>
         <p className="hero-subtitle-projects">
           Building secure, innovative web experiences with a focus on full-stack
