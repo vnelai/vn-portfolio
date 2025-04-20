@@ -8,6 +8,7 @@
   animation: gradientAnimation 10s ease infinite;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 8rem 2rem;
@@ -15,6 +16,7 @@
   box-sizing: border-box;
   height: 100vh;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 /* Keyframes for gradient animation */
@@ -46,6 +48,12 @@ body.dark .hero-section {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7); 
   z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  margin: 0; /* remove default spacing */
+  padding: 0;
 }
 
 /* Hero Text Content Styling */

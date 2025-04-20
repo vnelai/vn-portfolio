@@ -6,10 +6,12 @@
     background: linear-gradient(45deg, #264653, #2f5f6d);
     animation: gradientAnimation 10s ease infinite;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     box-sizing: border-box;
+
   }
   
   @keyframes gradientAnimation {
