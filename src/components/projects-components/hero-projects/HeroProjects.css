@@ -1,30 +1,22 @@
 .hero-section-projects {
     height: 100vh;
     padding: 6rem 2rem;
-    color: #fff;
+    position: relative;
     text-align: center;
-    background: linear-gradient(45deg, #264653, #2f5f6d);
-    animation: gradientAnimation 10s ease infinite;
+    background: #2c4e5d;    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     box-sizing: border-box;
+    color: #fff;
+  }
 
-  }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  /* Dark Mode Background */
+.dark .hero-section-projects {
+  background: #2e234f;
+}
+
   
   .hero-section-projects::before {
     content: "";
@@ -35,11 +27,6 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: -1;
-  }
-  
-  body.dark .hero-section-projects {
-    background: linear-gradient(45deg, rgb(20, 20, 20), rgba(40, 40, 40, 0.8));
-    animation: gradientAnimation 10s ease infinite;
   }
   
   .hero-title-projects {

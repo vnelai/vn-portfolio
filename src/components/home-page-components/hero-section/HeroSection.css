@@ -1,42 +1,22 @@
 /* Hero Section Styling */
 .hero-section {
+  height: 100vh;
+  padding: 8rem 2rem;
   position: relative;
-  width: 100%;
   text-align: center;
-  background: linear-gradient(45deg, #264653, #2f5f6d); /* Animated gradient (Dark Teal to Slightly Lighter Teal:)*/
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
-  background-position: center;
+  background: #2c4e5d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8rem 2rem;
-  color: white;
   box-sizing: border-box;
-  height: 100vh;
-  margin-bottom: 0;
-  overflow: hidden;
+  color: white;
 }
 
-/* Keyframes for gradient animation */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 /* Dark Mode Background */
-body.dark .hero-section {
-  background: linear-gradient(45deg, rgb(20, 20, 20), rgba(40, 40, 40, 0.8)); /* dark mode gradient */
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
+.dark .hero-section {
+  background: #2e234f;
 }
 
 .hero-section::before {
