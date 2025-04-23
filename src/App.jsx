@@ -5,10 +5,11 @@ import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import BlogPage from "./pages/BlogPage";
-import Article from "././components/article/Article"; // Full Article Component
+import Article from "./components/blog-components/article/Article"; // Full Article Component
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
+import NotFound from "./components/not-found/NotFound";
 // Import Styling
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -34,7 +35,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="app-wrapper">
       <Header toggleDarkMode={toggleDarkMode} />
       <Router>
         <div className="main-content">
@@ -47,14 +48,14 @@ function App() {
             />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:id" element={<Article />} />{" "}
-            {/* Dynamic routing for full article */}
+            <Route path="/blog/:slug" element={<Article />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>
       <Footer/>
-    </>
+    </div>
   );
 }
 

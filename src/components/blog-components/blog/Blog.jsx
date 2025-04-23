@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Blog.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Blog.css";
 
 const Blog = ({ articles }) => {
   return (
@@ -12,13 +12,8 @@ const Blog = ({ articles }) => {
             <h2>{article.title}</h2>
             <p>{article.excerpt}</p>
             <span>{article.date}</span>
-            <Link
-              to={{
-                pathname: `/blog/${article.id}`,  // Navigate to the full article
-                state: { article }  // Pass the article data as state
-              }}
-            >
-             Read More
+            <Link to={`/blog/${article.slug}`} className="read-more-link">
+              Read More
             </Link>
           </div>
         ))}

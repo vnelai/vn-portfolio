@@ -16,3 +16,15 @@ body.light {
   background-color: #ffffff;
   color: black;
 }
+
+/* This makes the layout fill the entire screen and pushes footer down */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* This makes the middle area take up remaining space */
+}
+
