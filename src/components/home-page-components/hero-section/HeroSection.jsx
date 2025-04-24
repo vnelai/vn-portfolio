@@ -38,6 +38,12 @@ function HeroSection() {
           user-friendly web applications.
         </h2>
         <div className="hero-btns-div">
+          <Link to="/projects" className="hero-btn">
+            💻 View Projects
+          </Link>
+          <Link to="/blog" className="hero-btn">
+            ✍️ View Blog
+          </Link>
           <a
             href="public/Cyber_Fellow_Resume-VNelai.pdf"
             target="_blank"
@@ -46,12 +52,6 @@ function HeroSection() {
           >
             📄 Get Resume
           </a>
-          <Link to="/projects" className="hero-btn">
-            💻 View Projects
-          </Link>
-          <Link to="/blog" className="hero-btn">
-            ✍️ View Blog
-          </Link>
         </div>
       </div>
     </section>
