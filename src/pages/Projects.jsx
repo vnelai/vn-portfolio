@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectsComp from '../components/projects-components/projects/ProjectsComp';
 import HeroProjects from '../components/projects-components/hero-projects/HeroProjects';
 import FeaturedProjects from '../components/projects-components/featured-projects/FeaturedProjects';
+import Categories from '../components/projects-components/categories/Categories';
 
 const projects = [
   {
@@ -28,6 +29,7 @@ function Projects() {
     <div>
       <HeroProjects />
       <FeaturedProjects/>
+      <Categories />
       <ProjectsComp projects={projects}/>;
     </div>
   );

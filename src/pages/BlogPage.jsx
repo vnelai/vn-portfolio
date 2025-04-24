@@ -2,7 +2,7 @@ import React from 'react';
 import Blog from '../components/blog-components/blog/Blog';
 import HeroBlog from '../components/blog-components/hero-blog/HeroBlog';
 import FeaturedBlogs from '../components/blog-components/featured-blogs/FeaturedBlogs';
-import BlogSection from '../components/blog-components/blog-section/BlogSection';
+import Topics from '../components/blog-components/topics/Topics';
 import articles from '../data/articles'; 
 
 function BlogPage() {
@@ -13,7 +13,7 @@ function BlogPage() {
       {/* Featured posts section */}
       <FeaturedBlogs />
       {/* Blog section displaying all articles */}
-      <BlogSection />
+      <Topics/>
       {/* Passing the articles as a prop to the Blog component */}
       <Blog articles={articles} /> 
     </div>
