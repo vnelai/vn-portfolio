@@ -37,7 +37,7 @@ function HeroSection() {
         </h2>
         <div className='hero-btns-div'>
           <a
-            href='/public/Virginia_Nelai _Resume.pdf'
+            href='public/Cyber_Fellow_Resume-VNelai.pdf'
             target='_blank'
             rel='noopener noreferrer'
             className='hero-btn'
