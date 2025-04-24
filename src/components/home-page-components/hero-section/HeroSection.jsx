@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-import './HeroSection.css';
+import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./HeroSection.css";
 
 function HeroSection() {
   const h1Ref = useRef(null);
@@ -10,9 +11,9 @@ function HeroSection() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add("visible");
         } else {
-          entry.target.classList.remove('visible');
+          entry.target.classList.remove("visible");
         }
       });
     });
@@ -29,27 +30,28 @@ function HeroSection() {
   }, []);
 
   return (
-    <section className='hero-section'>
-      <div className='hero-content'>
+    <section className="hero-section">
+      <div className="hero-content">
         <h1 ref={h2Ref}>Software Engineer & Cybersecurity Professional</h1>
         <h2 ref={pRef}>
-          Passionate about finding vulnerabilities and building secure, user-friendly web applications.
+          Passionate about finding vulnerabilities and building secure,
+          user-friendly web applications.
         </h2>
-        <div className='hero-btns-div'>
+        <div className="hero-btns-div">
           <a
-            href='public/Cyber_Fellow_Resume-VNelai.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='hero-btn'
+            href="public/Cyber_Fellow_Resume-VNelai.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-btn"
           >
             📄 Get Resume
           </a>
-          <a href='/projects' className='hero-btn'>
+          <Link to="/projects" className="hero-btn">
             💻 View Projects
-          </a>
-          <a href='/blog' className='hero-btn'>
+          </Link>
+          <Link to="/blog" className="hero-btn">
             ✍️ View Blog
-          </a>
+          </Link>
         </div>
       </div>
     </section>

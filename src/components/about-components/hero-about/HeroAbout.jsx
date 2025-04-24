@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroAbout.css";
+import { Link } from 'react-router-dom';
 
 const HeroAbout = () => {
   const scrollToSection = (id) => {
@@ -26,14 +27,12 @@ const HeroAbout = () => {
           >
             💻 View My Skills
           </button>
-          <a
-            href="https://linkedin.com/in/virginianelai"
+          <Link
+            to="/blog"
             className="cta-button-about connect"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             📖 Explore My Blog
-          </a>
+          </Link>
         </div>
       </div>
     </section>

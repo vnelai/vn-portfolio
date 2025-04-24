@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "./HeroProjects.css";
 
 function HeroProjects() {
@@ -27,9 +28,9 @@ function HeroProjects() {
           >
             📚 View Categories
           </button>
-          <a href="/contact" className="cta-button-projects community">
+          <Link to="/contact" className="cta-button-projects community">
             💼 Work With Me
-          </a>
+          </Link>
         </div>
       </div>
     </section>
