@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectsComp from '../components/projects-components/projects/ProjectsComp';
 import HeroProjects from '../components/projects-components/hero-projects/HeroProjects';
+import FeaturedProjects from '../components/projects-components/featured-projects/FeaturedProjects';
 
 const projects = [
   {
@@ -26,6 +27,7 @@ function Projects() {
   return (
     <div>
       <HeroProjects />
+      <FeaturedProjects/>
       <ProjectsComp projects={projects}/>;
     </div>
   );

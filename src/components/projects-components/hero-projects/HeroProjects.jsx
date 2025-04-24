@@ -1,8 +1,16 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./HeroProjects.css";
 
 function HeroProjects() {
+  // Scroll function to smoothly scroll to a section by id
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero-section-projects">
       <div className="hero-content-projects">
@@ -17,7 +25,7 @@ function HeroProjects() {
         </p>
         <div className="cta-buttons-projects">
           <button
-            onClick={() => scrollToSection("featured-work")}
+            onClick={() => scrollToSection("featured-projects")}
             className="cta-button-projects"
           >
             🌟 View Featured Work
