@@ -142,6 +142,7 @@
   }
 
   .hero-btns-div {
+    margin-top:0;
     flex-direction: center;
     gap: 1.5rem;
     align-items: center;
@@ -150,5 +151,9 @@
   .hero-btn {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;   
+}
+
+.hero-content > * {
+  margin-bottom: 2.5rem;
 }
 }
