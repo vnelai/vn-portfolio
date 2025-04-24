@@ -1,5 +1,6 @@
 // FeaturedProject.jsx:
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FeaturedContent.css';
 import { useInView } from 'react-intersection-observer';
 
@@ -29,7 +30,7 @@ function FeaturedContent() {
           <p>From hospital hallways to the front lines of digital defense, I transitioned from healthcare to cybersecurity with zero 
             tech background — just grit, purpose, and a hunger to protect. This post unpacks how I went from learning IT basics to 
             earning multiple certs, diving into code, and securing real-world systems. If you're navigating your own self-taught journey or curious how coding and cyber connect, this one's for you.</p>
-          <a href="https://vnelai.github.io/React_Todo_List/" className="featured-link">View Post</a>
+            <Link to="/blog" className="featured-link">View Post</Link>
           </div>
         </div>
       </div>  
