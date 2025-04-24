@@ -2,6 +2,8 @@
   padding: 5rem 2rem;
   text-align: center;
   position: relative;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .section-title-blog {

@@ -1,7 +1,9 @@
 :root {
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: inherit;
+  --bg-main: #ffffff;
+  --text-main: #000000;
+
+  --bg-hero: #2c4e5d;
+  --text-hero: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,15 +11,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  --bg-main: rgb(20, 20, 20);
+  --text-main: #ffffff;
+  --bg-hero: #2e234f;
+  --text-hero: #ffffff;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
 }

@@ -6,6 +6,8 @@
   margin: 0 auto;
   padding: 4rem 1rem;
   font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .article-image {
@@ -58,6 +60,7 @@
   background-color: #287371;
   color: #fff;
   text-decoration: none;
+  border: none;
   border-radius: 3rem;
   transition: background-color 0.3s ease;
   text-align: center;

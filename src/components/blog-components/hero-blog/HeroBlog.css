@@ -3,19 +3,14 @@
   padding: 6rem 2rem;
   position: relative;
   text-align: center;
-  background: #2c4e5d;  
   display: flex;
   flex-direction: column;
   justify-content: center;  
   align-items: center;
   box-sizing: border-box;
-  color: #fff;
+  background-color: var(--bg-hero);
+  color: var(--text-hero);
 }
-
-  /* Dark Mode Background */
-  .dark .hero-section-blog {
-    background: #2e234f;
-  }
 
 .hero-section-blog::before {
   content: "";

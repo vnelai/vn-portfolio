@@ -11,7 +11,6 @@ import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/not-found/NotFound";
 // Import Styling
-import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {

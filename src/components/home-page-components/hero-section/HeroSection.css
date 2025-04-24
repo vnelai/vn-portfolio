@@ -4,20 +4,15 @@
   padding: 8rem 2rem;
   position: relative;
   text-align: center;
-  background: #2c4e5d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  color: white;
+  background-color: var(--bg-hero);
+  color: var(--text-hero);
 }
 
-
-/* Dark Mode Background */
-.dark .hero-section {
-  background: #2e234f;
-}
 
 .hero-section::before {
   content: "";

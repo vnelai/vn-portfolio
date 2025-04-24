@@ -1,10 +1,12 @@
 /* General Styling */
 .stay-connected {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .stay-connected h1 {
@@ -18,133 +20,130 @@
 /* Social Media Home Page Icons */
 .social-media-div {
   margin-top: 1rem;
+}
+
+.sm-button i {
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.63rem 0.63rem 1.25rem;
+  text-align: center;
+  display: inline-block;
+  font-size: inherit;
+  transition: transform 0.2s;
+}
+
+.sm-button:hover i {
+  transform: scale(1.3); /* Make icons grow slightly on hover */
+}
+
+.sm-button {
+  text-decoration: none;
+  font-size: 2.3rem;
+  margin: 0.5rem;
+}
+
+.github i {
+  background-color: #334;
+}
+
+.linkedin i {
+  background-color: #0e76a9;
+}
+
+.google i {
+  background-color: #ea4336;
+}
+
+.github i:hover,
+.google i:hover,
+.linkedin i:hover {
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .stay-connected h2 {
+    font-size: 0.95rem;
   }
-  
+
   .sm-button i {
-    color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    line-height: 3.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: 0.63rem 0.63rem 1.25rem;
-    text-align: center;
-    display: inline-block;
-    font-size: inherit;
-    transition: transform 0.2s;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
   }
-  
-  .sm-button:hover i {
-    transform: scale(1.3); /* Make icons grow slightly on hover */
-  }
-  
-  .sm-button {
-    text-decoration: none;
-    font-size: 2.3rem;
-    margin: 0.5rem;
-  }
-  
-  .github i {
-    background-color: #334;
-  }
-  
-  .linkedin i {
-    background-color: #0e76a9;
-  }
-  
-  .google i {
-    background-color: #ea4336;
-  }
+}
 
-  .github i:hover,
-  .google i:hover,
-  .linkedin i:hover {
-    background-color: #000;
-  }
-  
+/* Newsletter Design */
+.newsletter-signup {
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
 
-  @media (max-width: 768px) {
-    .stay-connected h2 {
-      font-size: 0.95rem;
-    }
+.newsletter-signup h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
 
-    .sm-button i {
-      width: 2.5rem;
-      height: 2.5rem;
-      line-height: 2.5rem;
-      font-size: 1.5rem;
-    }
-  }
+.newsletter-signup p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /* Newsletter Design */
+.newsletter-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
   .newsletter-signup {
+    padding: 1rem;
     text-align: center;
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 500px;
   }
-  
+
   .newsletter-signup h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .newsletter-signup p {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
   }
-  
+
   .newsletter-form {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
     align-items: center;
   }
-  
+
   .newsletter-form input {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.3125rem;
-    margin-bottom: 1rem;
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 600px) {
-    .newsletter-signup {
-      padding: 1rem;
-      text-align: center;
-    }
-  
-    .newsletter-signup h3 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-  
-    .newsletter-signup p {
-      font-size: 0.85rem;
-      margin-bottom: 1rem;
-    }
-  
-    .newsletter-form {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      width: 100%;
-      align-items: center;
-    }
-  
-    .newsletter-form input {
-      width: 80%;
-      padding: 0.5rem;
-      font-size: 0.9rem;
-    }
-  
-    .form-btn{
-      width: 80%;
-      padding: 0.5rem;
-      font-size: 0.9rem;
-    }
+
+  .form-btn {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
-  
+}

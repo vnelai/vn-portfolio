@@ -1,6 +1,8 @@
 .skills-section {
   margin: 1.25rem 0;
   overflow: hidden; /* Keeps overflow hidden */
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .skills-section.software-skills {

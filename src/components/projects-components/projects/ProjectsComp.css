@@ -1,6 +1,8 @@
 .projects-component {
   padding: 2.5rem;
   margin-top: 2.0rem; /* Add space between the nav and projects section */
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .projects-component h2 {
