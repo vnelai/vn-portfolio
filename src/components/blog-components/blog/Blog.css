@@ -89,3 +89,7 @@ body.dark .blog-card {
 body.dark .blog-card a {
   color: white;
 }
+
+.no-articles-message {
+  text-align: center;
+}

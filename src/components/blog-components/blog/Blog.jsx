@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import "./Blog.css";
 
 const Blog = ({ articles }) => {
+  // If no articles are provided, show a message
+  if (articles.length === 0) {
+    return <h2 className="no-articles-message">No articles available for the selected topic.</h2>;
+  }
+
   return (
     <div className="blog-container">
       <div className="blog-grid">
