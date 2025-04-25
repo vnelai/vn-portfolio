@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Categories.css';
 
-function Categories() {
+function Categories({ onCategorySelect }) {
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  const handleCategorySelect = (category) => {
+    setActiveCategory(category);
+    onCategorySelect(category); // Pass selected category to parent
+  };
+
   return (
     <section id="categories" className="section">
       <h2 className="section-title">📂 Explore by Category</h2>
       <div className="category-buttons">
-        <div className='line1'>
-          <button className="category">Full-Stack Development</button>
-          <button className="category">Cybersecurity Projects</button>
-          <button className="category">Cloud & DevOps</button>
-          <button className="category">Web Applications</button>
+        <div className="line1">
+          <button className="category" onClick={() => handleCategorySelect('Full-Stack Development')}>Full-Stack Development</button>
+          <button className="category" onClick={() => handleCategorySelect('Cybersecurity Projects')}>Cybersecurity Projects</button>
+          <button className="category" onClick={() => handleCategorySelect('Cloud & DevOps')}>Cloud & DevOps</button>
+          <button className="category" onClick={() => handleCategorySelect('Web Applications')}>Web Applications</button>
         </div>
-        <div className='line2'>
-          <button className="category">Mobile Apps</button>
-          <button className="category">Data Science & AI</button>
-          <button className="category">Freelance Projects</button>
+        <div className="line2">
+          <button className="category" onClick={() => handleCategorySelect('Mobile Apps')}>Mobile Apps</button>
+          <button className="category" onClick={() => handleCategorySelect('Data Science & AI')}>Data Science & AI</button>
+          <button className="category" onClick={() => handleCategorySelect('Freelance Projects')}>Freelance Projects</button>
         </div>
       </div>
     </section>

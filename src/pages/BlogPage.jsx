@@ -13,9 +13,8 @@ function BlogPage() {
    ? articles.filter((article) => article.topics.includes(selectedTopic))
    : articles;
 
-   console.log(selectedTopic);
   return (
-    <div className="blog-page">
+    <div>
       {/* Hero section for the blog */}
       <HeroBlog />
       {/* Featured posts section */}
