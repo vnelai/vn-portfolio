@@ -33,6 +33,7 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
   font-weight: bold;
+  width: 15rem;
 }
 
 .card-blog:hover {
