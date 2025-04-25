@@ -3,6 +3,7 @@
   --text-main: #000000;
   --bg-hero: #2c4e5d;
   --text-hero: #ffffff;
+  --bg-header-footer: #264653;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +25,7 @@ body.dark {
   --text-main: #ffffff;
   --bg-hero: #2e234f;
   --text-hero: #ffffff;
+  --bg-header-footer: rgba(95, 63, 138);
 }
 
 .app-wrapper {

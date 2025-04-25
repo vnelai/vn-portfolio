@@ -3,7 +3,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 1001; /* Stay above other content */
-  background-color: #264653; 
+  background-color: var(--bg-header-footer);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,10 +52,6 @@ body.dark .menu a,
 body.dark .menu-container,
 body.dark .mode-toggle button {
   color: white;
-}
-
-.dark header {
-  background-color: #3c2f5e; 
 }
 
 /* Specific styles for header and menu when in light mode */
