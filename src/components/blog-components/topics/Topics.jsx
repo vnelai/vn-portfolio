@@ -1,7 +1,7 @@
 import React from 'react';
 import './Topics.css';
 
-function BlogSection() {
+function Topics() {
   return (
     <section id="topics" className="section">
     <h2 className="section-title">🧠 Explore by Topic</h2>
@@ -22,4 +22,4 @@ function BlogSection() {
   );
 };
 
-export default BlogSection;
+export default Topics;

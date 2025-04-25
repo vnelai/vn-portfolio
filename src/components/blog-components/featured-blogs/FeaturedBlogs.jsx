@@ -2,6 +2,13 @@ import React from 'react';
 import './FeaturedBlogs.css';
 
 function FeaturedBlogs() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <section id="featured" className="section-blog">
         <h2 className="section-title-blog">✨ Featured Posts</h2>
@@ -11,7 +18,12 @@ function FeaturedBlogs() {
           <div className="card-blog">Building Meal Prep Pro: Lessons from My Capstone</div>
           <div className="card-blog">First Freelance Gig: What I Learned Under Pressure</div>
         </div>
-        <button className="view-all-blog">View All Featured</button>
+        <button 
+        onClick={()=> scrollToSection("topics")} 
+        className="view-all-blog"
+        >
+          View All Posts
+        </button>
       </section>
   );
 };
