@@ -15,10 +15,10 @@ function HeroProjects() {
     <section className="hero-section-projects">
       <div className="hero-content-projects">
         <h1 className="hero-title-projects">Secure Code Lab</h1>
-        <p className="hero-subtitle-projects">
+        <h2 className="hero-subtitle-projects">
           Building secure, innovative web experiences with a focus on full-stack
           development and cybersecurity.
-        </p>
+        </h2>
         <p className="hero-paragraph-projects">
           This is my project vault — apps, tools, and experiments blending code
           with cyber to solve real-world problems.
