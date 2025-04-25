@@ -12,6 +12,7 @@
 }
 
 .projects-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2.5rem;
@@ -111,6 +112,7 @@ body.dark .project-links a {
 
   .projects-container {
     padding: 0 1rem; 
+    grid-template-columns: 1fr; /* One full-width column */
   }
 
   .project-card {
