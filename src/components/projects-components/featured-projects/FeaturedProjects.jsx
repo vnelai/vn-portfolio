@@ -2,6 +2,13 @@ import React from 'react';
 import './FeaturedProjects.css';
 
 function FeaturedProjects() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="featured-projects" className="section-projects">
         <h2 className="section-title-projects">✨ Featured Projects</h2>
@@ -11,7 +18,12 @@ function FeaturedProjects() {
           <div className="card-project">Cybersecurity Challenge Tracker</div>
           <div className="card-project">E-Commerce Storefront Development</div>
         </div>
-        <button className="view-all-projects">View All Projects</button>
+        <button 
+        onClick={()=> scrollToSection("categories")} 
+        className="view-all-projects"
+        >
+          View All Projects
+        </button>
     </section>
   );
 };
