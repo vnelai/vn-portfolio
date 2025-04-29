@@ -2,6 +2,11 @@ import React from "react";
 import "./ProjectsComp.css";
 
 function ProjectsComp({ projects }) {
+    // If no articles are provided, show a message
+    if (projects.length === 0) {
+      return <h2 className="no-projects-message">No articles available for the selected topic.</h2>;
+    }
+
   return (
     <section className="projects-component">
       <div className="projects-container">
