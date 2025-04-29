@@ -1,3 +1,7 @@
+// Topics:
+// Career & Journey, Certifications & Learning, Hands-On Labs & Tools, 
+// Cybersecurity (Beginner to Pro), Bootcamp & Self-Taught Life, Freelance & Remote Life
+
 const articles = [
   {
     id: "a5b8f1b3-29f3-47e8-98bb-f80cd3c208e2",
@@ -99,8 +103,8 @@ const articles = [
 `,
     topics: [
       "Cybersecurity (Beginner to Pro)",
-      "Hands-On Labs & Tools",
-      "Career Growth",
+      "Career & Journey",
+      "Certifications & Learning"
     ],
   },
 ];
