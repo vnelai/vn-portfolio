@@ -37,7 +37,7 @@ const Article = () => {
       <span>{article.date}</span>
 
       {/* Display article content */}
-      <p>{article.content}</p>
+      <div className="article-content" dangerouslySetInnerHTML={{ __html: article.content }} />
 
       {/* Back Button */}
       <button className="back-btn" onClick={() => navigate(-1)}>
