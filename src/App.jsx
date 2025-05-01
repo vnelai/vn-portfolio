@@ -26,6 +26,11 @@ function App() {
       document.body.classList.add("light");
       document.body.classList.remove("dark");
     }
+
+    // Force a reflow/repaint after changing the theme
+    document.body.style.display = 'none'; // Hide the body
+    document.body.offsetHeight; // Trigger reflow
+    document.body.style.display = ''; // Show the body again
   }, [isDarkMode]);
 
   // Function to change the state of mode-toggle
