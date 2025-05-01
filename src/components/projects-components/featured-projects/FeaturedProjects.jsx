@@ -46,7 +46,6 @@ function FeaturedProjects({ onViewAll }) {
           </a>
         </div>
       </div>
-
       <button onClick={handleViewAllClick} className="view-all-projects">
         View All Projects
       </button>

@@ -18,7 +18,7 @@ function BlogPage() {
       {/* Hero section for the blog */}
       <HeroBlog />
       {/* Featured posts section */}
-      <FeaturedBlogs />
+      <FeaturedBlogs onViewAll={() => setSelectedTopic(null)} />
       {/* Topic section displaying all topics */}
       <Topics onTopicSelect={setSelectedTopic} />
       {/* Passing the articles as a prop to the Blog component */}
