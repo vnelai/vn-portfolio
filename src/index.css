@@ -21,7 +21,7 @@ body {
 }
 
 body.dark {
-  --bg-main: rgb(20, 20, 20);
+  --bg-main: black;
   --text-main: #ffffff;
   --bg-hero: #2e234f;
   --text-hero: #ffffff;
