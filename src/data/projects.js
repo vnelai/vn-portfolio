@@ -11,7 +11,7 @@ const projects = [
     topics: ['Full-Stack Development', 'Web Applications']
   },
   {
-    title: 'React To-Do List – Front-End Task Management with Full CRUD',
+    title: 'React To-Do List - Front-End Task Management with Full CRUD',
     description:
       'The React To-Do List app demonstrates my understanding of React fundamentals, including state management with useState and fast front-end development with Vite. Users can create, edit, delete, rearrange tasks by priority, and mark them as completed. This project highlights my ability to build a dynamic UI with React, implementing full CRUD functionality without a back-end.',
     liveLink: 'https://vnelai.github.io/React_Todo_List/',

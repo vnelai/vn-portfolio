@@ -2,19 +2,28 @@ import React from "react";
 import "./ProjectsComp.css";
 
 function ProjectsComp({ projects }) {
-    // If no articles are provided, show a message
-    if (projects.length === 0) {
-      return <h2 className="no-projects-message">No articles available for the selected topic.</h2>;
-    }
+  // If no articles are provided, show a message
+  if (projects.length === 0) {
+    return (
+      <h2 className="no-projects-message">
+        No articles available for the selected topic.
+      </h2>
+    );
+  }
 
   return (
     <section className="projects-component">
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h2> {projects[0].title.split(" - ").map((part, index) => (
-          <span key={index}>{part}<br /></span>
-        ))}</h2>
+            <h2>
+              {project.title.split(" - ").map((part, index) => (
+                <span key={index}>
+                  {part}
+                  <br />
+                </span>
+              ))}
+            </h2>
             <img src={project.image} alt={project.title} />
             <p>{project.description}</p>
 

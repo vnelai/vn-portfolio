@@ -29,7 +29,7 @@ function FeaturedProjects({ onViewAll }) {
         </div>
         <div className="card-project">
           <a
-            href="https://example.com/cybersecurity-challenge"
+            href="0"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,7 +38,7 @@ function FeaturedProjects({ onViewAll }) {
         </div>
         <div className="card-project">
           <a
-            href="https://example.com/e-commerce-storefront"
+            href="0"
             target="_blank"
             rel="noopener noreferrer"
           >
