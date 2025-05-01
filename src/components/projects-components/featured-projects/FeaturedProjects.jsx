@@ -33,7 +33,7 @@ function FeaturedProjects({ onViewAll }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Cybersecurity Challenge Tracker
+            ...
           </a>
         </div>
         <div className="card-project">
@@ -42,7 +42,7 @@ function FeaturedProjects({ onViewAll }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            E-Commerce Storefront Development
+            ...
           </a>
         </div>
       </div>

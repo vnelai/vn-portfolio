@@ -36,6 +36,15 @@
   width: 15rem;
 }
 
+.card-blog a {
+  color: inherit;  /* Make sure the link inherits color from parent */
+  text-decoration: none;  /* Remove underline from the link */
+  display: block;  /* Make the entire card clickable */
+  width: 100%;
+  height: 100%;
+}
+
+
 .card-blog:hover {
   background-color: #264653;
   transform: scale(1.05);

@@ -1,30 +1,39 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FeaturedBlogs.css';
 
-function FeaturedBlogs() {
+function FeaturedBlogs({ onViewAll }) {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  
+
+  const handleViewAllClick = () => {
+    if (onViewAll) onViewAll();         // Reset topic filter
+    scrollToSection('topics');          // Scroll to blog topics section
+  };
+
   return (
     <section id="featured" className="section-blog">
-        <h2 className="section-title-blog">✨ Featured Posts</h2>
-        <div className="card-grid-blog">
-          {/* Replace with dynamic featured blog cards */}
-          <div className="card-blog">Top 5 Cybersecurity Labs That Helped Me Grow</div>
-          <div className="card-blog">Building Meal Prep Pro: Lessons from My Capstone</div>
-          <div className="card-blog">First Freelance Gig: What I Learned Under Pressure</div>
+      <h2 className="section-title-blog">✨ Featured Posts</h2>
+      <div className="card-grid-blog">
+        <div className="card-blog">
+          <Link to="breaking-into-cybersecurity-a-self-taught-path">Breaking Into Cybersecurity: A Self-Taught Path Fueled by Purpose</Link>
         </div>
-        <button 
-        onClick={()=> scrollToSection("topics")} 
-        className="view-all-blog"
-        >
-          View All Posts
-        </button>
-      </section>
+        <div className="card-blog">
+          <Link to="/...">...</Link>
+        </div>
+        <div className="card-blog">
+          <Link to="/...">...</Link>
+        </div>
+      </div>
+      <button onClick={handleViewAllClick} className="view-all-blog">
+        View All Posts
+      </button>
+    </section>
   );
-};
+}
+
 export default FeaturedBlogs;
