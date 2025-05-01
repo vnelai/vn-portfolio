@@ -10,10 +10,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
   background-color: var(--bg-main);

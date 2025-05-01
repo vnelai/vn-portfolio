@@ -16,7 +16,7 @@ const Blog = ({ articles }) => {
             <img src={article.image} alt={article.title} />
             <h2>{article.title}</h2>
             <p>{article.excerpt}</p>
-            <span  class="article-date">{article.date}</span>
+            <span  className="article-date">{article.date}</span>
             <Link to={`/blog/${article.slug}`} className="read-more-link">
               Read More
             </Link>
