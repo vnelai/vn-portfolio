@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./FeaturedProjects.css";
 
-function FeaturedProjects() {
+function FeaturedProjects({ onViewAll }) {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleViewAllClick = () => {
+    if (onViewAll) onViewAll();         // Reset category filter
+    scrollToSection("categories");      // Scroll to section
   };
 
   return (
@@ -43,10 +47,7 @@ function FeaturedProjects() {
         </div>
       </div>
 
-      <button
-        onClick={() => scrollToSection("categories")}
-        className="view-all-projects"
-      >
+      <button onClick={handleViewAllClick} className="view-all-projects">
         View All Projects
       </button>
     </section>

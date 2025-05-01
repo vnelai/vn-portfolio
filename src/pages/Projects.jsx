@@ -15,7 +15,7 @@ function Projects() {
   return (
     <div>
       <HeroProjects />
-      <FeaturedProjects />
+      <FeaturedProjects onViewAll={() => setSelectedCategory(null)} />
       <Categories onCategorySelect={setSelectedCategory} />
       <ProjectsComp projects={filteredProjects} />
     </div>
