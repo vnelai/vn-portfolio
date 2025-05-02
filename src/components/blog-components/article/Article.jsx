@@ -23,19 +23,20 @@ const Article = () => {
 
   return (
     <div className="article-page">
-      {/* Display article image */}
-      <img
-        src={`/${article.image}`}
-        alt={article.title}
-        className="article-image"
-      />
-
+      
       {/* Display article title */}
       <h1>{article?.title}</h1>
 
       {/* Display article date */}
       <span>{article.date}</span>
 
+      {/* Display article image */}
+      <img
+        src={`/${article.image}`}
+        alt={article.title}
+        className="article-image"
+      />
+      
       {/* Display article content */}
       <div className="article-content" dangerouslySetInnerHTML={{ __html: article.content }} />
 
