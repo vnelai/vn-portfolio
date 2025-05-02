@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2.5rem;
-  padding: 0 1.25rem; /* Added padding for spacing */
+  padding: 0 0rem; /* Added padding for spacing */
 }
 
 .project-card {
@@ -115,7 +115,7 @@ body.dark .project-links a {
   }
 
   .projects-container {
-    padding: 0 1rem; 
+    padding: 0 0; 
     grid-template-columns: 1fr; /* One full-width column */
   }
 
