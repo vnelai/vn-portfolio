@@ -28,7 +28,7 @@ const Article = () => {
       <h1>{article?.title}</h1>
 
       {/* Display article date */}
-      <span>{article.date}</span>
+      <span className="article-date">{article.date}</span>
 
       {/* Display article image */}
       <img
