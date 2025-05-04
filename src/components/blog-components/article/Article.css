@@ -47,6 +47,10 @@
   text-align: center;
 }
 
+.article-content {
+  margin-bottom: 4rem;
+}
+
 .article-content p {
   margin-bottom: 1.4rem;
   line-height: 1.6;
@@ -107,7 +111,11 @@
 
   .article-page h1 {
     font-size: 1.75rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .article-content {
+    margin-bottom: 3rem;
   }
 
   .article-content hr {
