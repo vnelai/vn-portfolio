@@ -11,7 +11,8 @@
 .blog-grid {
   display: grid;
   /* Responsive Grid Layout */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
   gap: 20px;
 }
 
