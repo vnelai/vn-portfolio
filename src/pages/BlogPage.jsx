@@ -12,7 +12,7 @@ function BlogPage() {
   useEffect(() => {
     const fetchArticles = async () => {
       const { data, error } = await supabase
-        .from('Posts')
+        .from('posts')
         .select('*');
   
       if (error) {
