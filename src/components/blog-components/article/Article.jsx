@@ -40,7 +40,7 @@ const Article = () => {
 
       {/* Display article image */}
       <img
-        src={`/${article.image}`}
+        src={`${article.image}`}
         alt={article.title}
         className="article-image"
       />
