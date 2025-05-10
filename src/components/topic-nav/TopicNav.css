@@ -54,4 +54,35 @@
   .dark .topic-nav-item {
     color: white;
   }
+
+  /* Scrollbar styling */
+.topic-nav::-webkit-scrollbar {
+    height: 6px;
+  }
   
+  .topic-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .topic-nav::-webkit-scrollbar-thumb {
+    background-color: rgba(180, 180, 180, 0.5); /* light mode default */
+    border-radius: 10px;
+  }
+  
+  /* Dark mode scrollbar color */
+  .dark .topic-nav::-webkit-scrollbar-thumb {
+    background-color: #7b4c9f;
+  }
+  
+  .dark .topic-nav::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  
+
+  /* Mobile styling: for screens smaller than 768px */
+@media (max-width: 768px) {
+    .topic-nav-item{
+        font-size: 1rem;
+    } 
+}
