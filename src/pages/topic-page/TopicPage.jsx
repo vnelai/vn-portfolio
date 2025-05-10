@@ -14,7 +14,7 @@ function TopicPage() {
     const loaderTimeout = setTimeout(() => {
       setShowLoader(true);
     }, 300); // Show loader only if loading takes longer than 300ms
-  
+
     const fetchArticles = async () => {
       const { data, error } = await supabase.from("posts").select("*");
       if (error) {
@@ -25,10 +25,9 @@ function TopicPage() {
       setLoading(false);
       clearTimeout(loaderTimeout); // Clear timeout if data loads quickly
     };
-  
+
     fetchArticles();
   }, []);
-  
 
   // Filter articles by topicSlug (which is the URL value)
   // Slugify function (same one used in Topics.jsx)
@@ -39,23 +38,26 @@ function TopicPage() {
       .replace(/\s+/g, "-");
 
   // Filter articles by checking slug match
-  const filteredArticles = articles.filter((article) =>
-    article.topics.some((topic) => slugify(topic) === topicSlug)
-  );
+  const filteredArticles =
+    topicSlug === "all"
+      ? articles
+      : articles.filter((article) =>
+          article.topics.some((topic) => slugify(topic) === topicSlug)
+        );
 
   const displayTopic = topicSlug
     .replace(/-/g, " ")
     .replace(/\b\w/g, (l) => l.toUpperCase());
 
-    if (loading) {
-        return (
-          <div className="loading-wrapper">
-            <div className="loading-spinner"></div>
-            <p className="loading-message">Loading articles...</p>
-          </div>
-        );
-      }
-      
+  if (loading) {
+    return (
+      <div className="loading-wrapper">
+        <div className="loading-spinner"></div>
+        <p className="loading-message">Loading articles...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="topic-page">
       <TopicNav />

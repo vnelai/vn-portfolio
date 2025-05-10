@@ -4,7 +4,10 @@ import "./Topics.css";
 
 // Slugify function
 const slugify = (text) =>
-  text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
+  text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
 
 function Topics() {
   const topics = [
@@ -14,7 +17,7 @@ function Topics() {
     "Cybersecurity (Beginner to Pro)",
     "Cloud, DevOps & DevSecOps",
     "Bootcamp & Self-Taught Life",
-    "Freelance & Remote Life", 
+    "Freelance & Remote Life",
   ];
 
   return (
@@ -31,9 +34,9 @@ function Topics() {
           </Link>
         ))}
       </div>
-      <Link to="/blog" className="topic all-button">
-          All
-        </Link>
+      <Link to="/blog/topic/all" className="topic all-button">
+        All
+      </Link>
     </section>
   );
 }
