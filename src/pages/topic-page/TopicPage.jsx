@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Blog from "../blog/Blog";
-import { supabase } from "../../../lib/supabaseClient";
+import TopicNav from "../../components/topic-nav/TopicNav";
+import Blog from "../../components/blog-components/blog/Blog";
+import { supabase } from "../../lib/supabaseClient";
 import "./TopicPage.css";
 
 function TopicPage() {
@@ -57,6 +58,7 @@ function TopicPage() {
       
   return (
     <div className="topic-page">
+      <TopicNav />
       <h1 className="topic-title">{displayTopic}</h1>
       <p className="topic-description">All articles about {displayTopic}</p>
 

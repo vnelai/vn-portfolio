@@ -4,15 +4,14 @@ import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import BlogPage from "./pages/BlogPage";
-import TopicPage from "./components/blog-components/topic-page/TopicPage";
-import Article from "./components/blog-components/article/Article";
+import TopicPage from "./pages/topic-page/TopicPage";
+import Article from "./pages/article-page/Article";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/not-found/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
 
