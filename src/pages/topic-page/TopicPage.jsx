@@ -61,10 +61,6 @@ function TopicPage() {
       <TopicNav />
       <h1 className="topic-title">{displayTopic}</h1>
       <p className="topic-description">All articles about {displayTopic}</p>
-
-      {/* Placeholder for reusable topic nav – coming later */}
-      {/* <TopicNav /> */}
-
       <Blog articles={filteredArticles} />
     </div>
   );

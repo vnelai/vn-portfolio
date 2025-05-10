@@ -1,5 +1,5 @@
 .topic-page {
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 0rem;
     text-align: center;
     color: inherit; 
   }
@@ -7,6 +7,7 @@
   .topic-title {
     font-size: 2.5rem;
     font-weight: 700;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     line-height: 1.2;
   }
