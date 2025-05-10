@@ -29,14 +29,14 @@ const TopicNav = () => {
           <Link
             key={slug}
             to={`/blog/topic/${slug}`}
-            className={`topic-nav-link ${isActive ? "active" : ""}`}
+            className={`topic-nav-item ${isActive ? "active" : ""}`}
           >
             {topic}
           </Link>
         );
       })}
 
-      <Link to="/blog" className={`topic-nav-link ${!topicSlug ? "active" : ""}`}>
+      <Link to="/blog" className={`topic-nav-item ${!topicSlug ? "active" : ""}`}>
         All
       </Link>
     </nav>
