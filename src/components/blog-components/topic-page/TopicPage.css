@@ -27,6 +27,41 @@
     margin-top: 6rem;
     opacity: 0.8;
   }
+    
+  .loading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 1rem;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #2a9d8f;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  .dark .loading-spinner {
+    border-top-color: #7b4c9f;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-message {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: inherit;
+    opacity: 0.8;
+  }
   
 
   @media (max-width: 768px) {

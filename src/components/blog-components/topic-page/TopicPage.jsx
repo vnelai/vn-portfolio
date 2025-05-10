@@ -10,19 +10,24 @@ function TopicPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const loaderTimeout = setTimeout(() => {
+      setShowLoader(true);
+    }, 300); // Show loader only if loading takes longer than 300ms
+  
     const fetchArticles = async () => {
-      setLoading(true); // Start loading
       const { data, error } = await supabase.from("posts").select("*");
       if (error) {
         console.error("Error fetching articles:", error);
       } else {
         setArticles(data);
       }
-      setLoading(false); // Done loading
+      setLoading(false);
+      clearTimeout(loaderTimeout); // Clear timeout if data loads quickly
     };
-
+  
     fetchArticles();
   }, []);
+  
 
   // Filter articles by topicSlug (which is the URL value)
   // Slugify function (same one used in Topics.jsx)
@@ -41,10 +46,15 @@ function TopicPage() {
     .replace(/-/g, " ")
     .replace(/\b\w/g, (l) => l.toUpperCase());
 
-  if (loading) {
-    return <p className="loading-message">Loading articles...</p>;
-  }
-
+    if (loading) {
+        return (
+          <div className="loading-wrapper">
+            <div className="loading-spinner"></div>
+            <p className="loading-message">Loading articles...</p>
+          </div>
+        );
+      }
+      
   return (
     <div className="topic-page">
       <h1 className="topic-title">{displayTopic}</h1>
