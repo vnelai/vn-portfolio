@@ -1,0 +1,39 @@
+.topic-page {
+    padding: 5rem 2rem 2rem;
+    text-align: center;
+    color: inherit; 
+  }
+  
+  .topic-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .topic-description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 50rem;
+    margin: 0 auto 2rem;
+    opacity: 0.8;
+  }
+  
+
+  @media (max-width: 768px) {
+    .topic-title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+  
+    .topic-description {
+      font-size: 1rem;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+  
+    .topic-page {
+      padding-top: 4rem;
+    }
+  }
+  

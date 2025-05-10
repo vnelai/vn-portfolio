@@ -1,65 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Topics.css";
 
-function Topics({ onTopicSelect }) {
-  const [activeTopic, setActiveTopic] = useState(null);
+// Slugify function
+const slugify = (text) =>
+  text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
 
-  const handleTopicSelect = (topic) => {
-    setActiveTopic(topic);
-    onTopicSelect(topic); // Pass the selected topic to the parent
-  };
+function Topics() {
+  const topics = [
+    "Career & Journey",
+    "Certifications & Learning",
+    "Hands-On Labs & Tools",
+    "Cybersecurity (Beginner to Pro)",
+    "Cloud, DevOps & DevSecOps",
+    "Bootcamp & Self-Taught Life",
+    "Freelance & Remote Life", 
+  ];
 
   return (
     <section id="topics" className="section">
       <h2 className="section-title">🧠 Explore by Topic</h2>
-      <div className="topic-buttons">
-        <div className="line1">
-          <button
+      <div className="topic-buttons-flex">
+        {topics.map((topic) => (
+          <Link
+            key={topic}
+            to={`/blog/topic/${slugify(topic)}`}
             className="topic"
-            onClick={() => handleTopicSelect("Career & Journey")}
           >
-            Career & Journey
-          </button>
-          <button
-            className="topic"
-            onClick={() => handleTopicSelect("Certifications & Learning")}
-          >
-            Certifications & Learning
-          </button>
-          <button
-            className="topic"
-            onClick={() => handleTopicSelect("Hands-On Labs & Tools")}
-          >
-            Hands-On Labs & Tools
-          </button>
-          <button
-            className="topic"
-            onClick={() => handleTopicSelect("Cybersecurity (Beginner to Pro)")}
-          >
-            Cybersecurity (Beginner to Pro)
-          </button>
-        </div>
-        <div className="line2">
-          <button
-            className="topic"
-            onClick={() => handleTopicSelect("Cloud, DevOps & DevSecOps")}
-          >
-            Cloud, DevOps & DevSecOps
-          </button>
-          <button
-            className="topic"
-            onClick={() => handleTopicSelect("Bootcamp & Self-Taught Life")}
-          >
-            Bootcamp & Self-Taught Life
-          </button>
-          <button
-            className="topic"
-            onClick={() => handleTopicSelect("Freelance & Remote Life")}
-          >
-            Freelance & Remote Life
-          </button>
-        </div>
+            {topic}
+          </Link>
+        ))}
       </div>
+      <Link to="/blog" className="topic all-button">
+          All
+        </Link>
     </section>
   );
 }

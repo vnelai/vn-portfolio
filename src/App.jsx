@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import BlogPage from "./pages/BlogPage";
+import TopicPage from "./components/blog-components/topic-page/TopicPage";
 import Article from "./components/blog-components/article/Article";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/about-me" element={<AboutMe isDarkMode={isDarkMode} />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/topic/:topicSlug" element={<TopicPage />} />
           <Route path="/blog/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
