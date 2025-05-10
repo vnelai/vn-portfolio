@@ -18,12 +18,13 @@
 
 /* Blog Card */
 .blog-card {
-  background: white;
+  background: #264653;
   border-radius: 8px;
+  border: 1px solid #111;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  border: 1px solid #e0e0e0; /* Subtle border */
+  color:white;
   padding: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -67,12 +68,12 @@
 }
 
 .blog-card a {
+  color:white;
   margin: 10px;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-  color: black;
   position: relative; /* Needed for the pseudo-element */
 }
 
