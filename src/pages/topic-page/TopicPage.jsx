@@ -45,9 +45,10 @@ function TopicPage() {
           article.topics.some((topic) => slugify(topic) === topicSlug)
         );
 
-  const displayTopic = topicSlug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (l) => l.toUpperCase());
+  const displayTopic =
+    topicSlug === "all"
+      ? "All Articles"
+      : topicSlug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
   if (loading) {
     return (
@@ -62,7 +63,11 @@ function TopicPage() {
     <div className="topic-page">
       <TopicNav />
       <h1 className="topic-title">{displayTopic}</h1>
-      <p className="topic-description">All articles about {displayTopic}</p>
+      <p className="topic-description">
+        {topicSlug === "all"
+          ? "Browse the full archive of posts across all topics."
+          : `All articles about ${displayTopic}`}
+      </p>{" "}
       <Blog articles={filteredArticles} />
     </div>
   );
