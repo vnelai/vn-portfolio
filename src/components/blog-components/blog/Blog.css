@@ -95,3 +95,45 @@ body.dark .blog-card a {
 .no-articles-message {
   text-align: center;
 }
+
+/* Media Query for Blog Mobile Responsiveness */
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .blog-card {
+    padding: 1rem;
+    min-height: 30rem;
+  }
+
+  .blog-card img {
+    height: 12rem; /* Smaller image height */
+  }
+
+  .blog-card h2 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+
+  .blog-card p {
+    font-size: 0.9rem;
+    margin: 0 1rem 1rem;
+  }
+
+  .blog-card span {
+    font-size: 0.8rem;
+    margin: 0 1rem 0.8rem;
+  }
+
+  .blog-card a {
+    font-size: 1rem;
+    margin: 0.8rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+    gap: 1rem;
+  }
+}

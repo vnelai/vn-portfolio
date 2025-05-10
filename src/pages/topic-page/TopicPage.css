@@ -16,7 +16,7 @@
     font-size: 1.2rem;
     font-weight: 400;
     max-width: 50rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;
     opacity: 0.8;
   }
   
@@ -75,6 +75,7 @@
       font-size: 1rem;
       padding: 0 1rem;
       line-height: 1.5;
+      margin-bottom: 0.2rem;
     }
   
     .topic-page {
