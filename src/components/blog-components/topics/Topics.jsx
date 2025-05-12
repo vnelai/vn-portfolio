@@ -11,13 +11,14 @@ const slugify = (text) =>
 
 function Topics() {
   const topics = [
-    "Career & Journey",
+    "Cybersecurity Fundamentals",
     "Certifications & Learning",
+    "Career & Self-Taught Journey",
+    "Advanced Cybersecurity & SOC Skills",
+    "Software,Cloud & DevSecOps",
     "Hands-On Labs & Tools",
-    "Cybersecurity (Beginner to Pro)",
-    "Cloud, DevOps & DevSecOps",
-    "Bootcamp & Self-Taught Life",
-    "Freelance & Remote Life",
+    "Freelance & Remote Work",
+    "Career & Self-Taught Journey"
   ];
 
   return (
