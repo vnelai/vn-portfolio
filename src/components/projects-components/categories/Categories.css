@@ -43,6 +43,7 @@
   cursor: pointer;
   font-weight: bold;
   border: none;
+  min-width: 15rem;
 }
 
 .category:hover {
