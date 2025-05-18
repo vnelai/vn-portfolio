@@ -7,13 +7,14 @@ const slugify = (text) =>
   text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
 
 const topics = [
-  "Career & Journey",
-  "Certifications & Learning",
-  "Hands-On Labs & Tools",
-  "Cybersecurity (Beginner to Pro)",
-  "Cloud, DevOps & DevSecOps",
-  "Bootcamp & Self-Taught Life",
-  "Freelance & Remote Life",
+   "Cybersecurity Fundamentals",
+    "Certifications & Learning",
+    "Career & Self-Taught Journey",
+    "Advanced Cybersecurity & SOC Skills",
+    "Software,Cloud & DevSecOps",
+    "Hands-On Labs & Tools",
+    "Freelance & Remote Work",
+    "Career & Self-Taught Journey",
 ];
 
 const TopicNav = () => {
