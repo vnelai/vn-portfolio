@@ -10,11 +10,13 @@
 }
 
 .stay-connected h1 {
-  font-size: 1.3rem;
+  font-size: 2.25rem;
 }
 
 .stay-connected h2 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-right:3rem;
 }
 
 /* Social Media Home Page Icons */
@@ -66,15 +68,13 @@
 
 @media (max-width: 768px) {
   .stay-connected h2 {
-    font-size: 0.95rem;
+    font-size: 1.3rem;
   }
 
-  .sm-button i {
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    font-size: 1.5rem;
-  }
+  .stay-connected h1 {
+  font-size: 1.8rem;
+}
+
 }
 
 /* Newsletter Design */
@@ -86,13 +86,17 @@
 }
 
 .newsletter-signup h3 {
-  font-size: 1.2rem;
+  font-size: 2.25rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .newsletter-signup p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .newsletter-form {
@@ -118,12 +122,12 @@
   }
 
   .newsletter-signup h3 {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
 
   .newsletter-signup p {
-    font-size: 0.85rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
   }
 
@@ -138,12 +142,12 @@
   .newsletter-form input {
     width: 80%;
     padding: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .form-btn {
     width: 80%;
     padding: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }

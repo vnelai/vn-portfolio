@@ -8,7 +8,8 @@
 /* Contact Header */
 h1 {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 /* Form Container */
@@ -28,7 +29,7 @@ h1 {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -39,7 +40,7 @@ textarea {
   margin-bottom: 1.25rem;
   border: 1px solid #40616d;
   border-radius: 0.3125rem;
-  font-size: 0.875rem;
+  font-size: 1.3rem;
   color: white;
   font-weight: 500;
   background-color: #1e3a43;
@@ -66,7 +67,7 @@ textarea {
   background-color: #287371;
   color: #fff;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -113,6 +114,10 @@ body.dark .form-btn {
 
 /* Responsive */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
   .form {
     margin: 3rem;
     padding: 1.5rem;
@@ -121,11 +126,16 @@ body.dark .form-btn {
 
   .form label {
     margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .form-btn {
+    font-size: 1.3rem;
   }
 
   input,
   textarea {
-    font-size: 1.13rem;
+    font-size: 1.2rem;
     margin: 0;
   }
 

@@ -21,7 +21,7 @@ function StayConnected() {
 
         {/* Newsletter Sign-Up Section */}
         <div className="newsletter-signup">
-          <h3>Join my newsletter</h3>
+          <h3>Join My Newsletter</h3>
           <p>Get the latest updates and tech insights straight to your inbox.</p>
           <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
             <input type="email" placeholder="Enter your email" required />
