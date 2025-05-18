@@ -14,6 +14,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
   gap: 20px;
+  margin-bottom: 5rem;
 }
 
 /* Blog Card */
@@ -95,6 +96,7 @@ body.dark .blog-card a {
 .no-articles-message {
   text-align: center;
 }
+
 
 /* Media Query for Blog Mobile Responsiveness */
 @media (max-width: 768px) {
