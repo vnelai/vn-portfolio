@@ -14,7 +14,7 @@ const topics = [
     "Software,Cloud & DevSecOps",
     "Hands-On Labs & Tools",
     "Freelance & Remote Work",
-    "Career & Self-Taught Journey",
+    "Cyber Talk Digest",
 ];
 
 const TopicNav = () => {
