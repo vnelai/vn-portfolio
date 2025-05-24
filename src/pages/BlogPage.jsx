@@ -11,8 +11,8 @@ function BlogPage() {
     const fetchArticles = async () => {
       const { data, error } = await supabase
         .from('posts')
-        .select('id, title, slug, excerpt, image, new_date, topics') // optimize fields
-        .order('new_date', { ascending: false });
+        .select('id, title, slug, excerpt, image, date, topics') // optimize fields
+        .order('date', { ascending: false });
 
       if (error) {
         console.error('Error fetching articles:', error);
