@@ -36,9 +36,8 @@ const TopicNav = () => {
           </Link>
         );
       })}
-
-      <Link to="/blog" className={`topic-nav-item ${!topicSlug ? "active" : ""}`}>
-        All
+      <Link to="/blog/topic/all" className="topic-nav-item">
+              All
       </Link>
     </nav>
   );
