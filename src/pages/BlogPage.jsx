@@ -12,7 +12,7 @@ function BlogPage() {
       const { data, error } = await supabase
         .from('posts')
         .select('id, title, slug, excerpt, image, date, topics') // optimize fields
-        .order('date', { ascending: false });
+        .order('new_date', { ascending: false });
 
       if (error) {
         console.error('Error fetching articles:', error);
