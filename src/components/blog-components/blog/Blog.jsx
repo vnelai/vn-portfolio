@@ -5,11 +5,11 @@ import "./Blog.css";
 const Blog = ({ articles }) => {
   const navigate = useNavigate();
 
-   // Sort articles by most recent first
+  // Sort articles by most recent first
   const sortedArticles = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
 
   // If no articles are provided, show a message
-  if (articles.length === 0) {
+  if (sortedArticles.length === 0) {
     return (
       <h2 className="no-articles-message">
         No articles available for the selected topic.
@@ -25,7 +25,13 @@ const Blog = ({ articles }) => {
             <img src={article.image} alt={article.title} />
             <h2>{article.title}</h2>
             <p>{article.excerpt}</p>
-            <span className="article-date">{article.date}</span>
+            <span className="article-date">
+              {new Date(article.date).toLocaleDateString(undefined, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </span>
             <Link to={`/blog/${article.slug}`} className="read-more-link">
               Read More
             </Link>
