@@ -37,6 +37,33 @@ function TopicPage() {
       .replace(/[^\w\s-]/g, "")
       .replace(/\s+/g, "-");
 
+  // Topic Descriptions
+  const topicDescriptions = {
+    "cybersecurity-fundamentals":
+      "Foundational knowledge every cyber pro needs — from network basics to security principles. Ideal for learners, mentors, and recruiters evaluating core skills.",
+
+    "certifications-learning":
+      "Guides, strategies, and reflections on earning top certifications and mastering the cyber learning curve — whether you're self-taught or structured.",
+
+    "career-self-taught-journey":
+      "My personal journey into cybersecurity — sharing what I’m learning, overcoming, and building as I grow in this space with curiosity and grit.",
+
+    "advanced-cybersecurity-soc-skills":
+      "In-depth tactics and blue-team wisdom from the front lines. For those building SOC muscle or hiring for real-world defensive skill.",
+
+    "software-cloud-devsecops":
+      "From securing cloud infrastructure to hardening application code — insights into cloud security, AppSec, and DevSecOps practices that bridge development and defense.",
+
+    "hands-on-labs-tools":
+      "Walkthroughs, setups, and reviews of labs, platforms, and tools — from TryHackMe to custom labs. If you build or hire hands-on, this is your zone.",
+
+    "freelance-remote-work":
+      "The cybersecurity hustle beyond the 9–5. Lessons in freelancing, remote gigs, contract work, and building freedom in your cyber career.",
+
+    "cyber-talk-digest":
+      "Sharp takes and reflections on the latest cyber news, podcasts, and real-world stories. Curated for those who think critically and hire wisely.",
+  };
+    
   // Filter articles by checking slug match
   const filteredArticles =
     topicSlug === "all"
@@ -66,8 +93,9 @@ function TopicPage() {
       <p className="topic-description">
         {topicSlug === "all"
           ? "Browse the full archive of posts across all topics."
-          : `All articles about ${displayTopic}`}
-      </p>{" "}
+          : topicDescriptions[topicSlug] || `All articles about ${displayTopic}`}
+      </p>
+
       <Blog articles={filteredArticles} />
     </div>
   );
