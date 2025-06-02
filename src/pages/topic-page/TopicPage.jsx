@@ -38,31 +38,31 @@ function TopicPage() {
       .replace(/\s+/g, "-");
 
   // Topic Descriptions
-  const topicDescriptions = {
-    "cybersecurity-fundamentals":
-      "Foundational knowledge every cyber pro needs — from network basics to security principles. Ideal for learners, mentors, and recruiters evaluating core skills.",
+ const topicDescriptions = {
+  "cybersecurity-fundamentals":
+    "Core knowledge every cyber pro should know. From networks and systems to basic security concepts that lay the groundwork for everything else.",
 
-    "certifications-learning":
-      "Guides, strategies, and reflections on earning top certifications and mastering the cyber learning curve — whether you're self-taught or structured.",
+  "certifications-learning":
+    "Tips, strategies, and real experiences with cyber certifications and learning paths. Whether you're self-taught or following a course, it’s all here.",
 
-    "career-self-taught-journey":
-      "My personal journey into cybersecurity — sharing what I’m learning, overcoming, and building as I grow in this space with curiosity and grit.",
+  "career-self-taught-journey":
+    "My personal journey into cybersecurity. I'm sharing what I’m learning, building, and figuring out along the way with curiosity and grit.",
 
-    "advanced-cybersecurity-soc-skills":
-      "In-depth tactics and blue-team wisdom from the front lines. For those building SOC muscle or hiring for real-world defensive skill.",
+  "advanced-cybersecurity-soc-skills":
+    "Deep dives into SOC operations and advanced security skills. Focused on real tactics, blue team work, and what it takes to be sharp on the job.",
 
-    "software-cloud-devsecops":
-      "From securing cloud infrastructure to hardening application code — insights into cloud security, AppSec, and DevSecOps practices that bridge development and defense.",
+  "software-cloud-devsecops":
+    "Covering cloud security, AppSec, and DevSecOps practices. From securing AWS and Azure to hardening your app code and pipelines.",
 
-    "hands-on-labs-tools":
-      "Walkthroughs, setups, and reviews of labs, platforms, and tools — from TryHackMe to custom labs. If you build or hire hands-on, this is your zone.",
+  "hands-on-labs-tools":
+    "Guides and walkthroughs for hands-on labs and tools. Includes setups, tutorials, and real usage from platforms like TryHackMe and custom labs.",
 
-    "freelance-remote-work":
-      "The cybersecurity hustle beyond the 9–5. Lessons in freelancing, remote gigs, contract work, and building freedom in your cyber career.",
+  "freelance-remote-work":
+    "Real talk on freelancing and remote life in cybersecurity. Learn how to land gigs, build a career on your terms, and keep growing outside the 9 to 5.",
 
-    "cyber-talk-digest":
-      "Sharp takes and reflections on the latest cyber news, podcasts, and real-world stories. Curated for those who think critically and hire wisely.",
-  };
+  "cyber-talk-digest":
+    "Takes and reflections on the latest cyber news, podcasts, and stories. Think of it as a curated stream for learners and thinkers in the space.",
+};
     
   // Filter articles by checking slug match
   const filteredArticles =
