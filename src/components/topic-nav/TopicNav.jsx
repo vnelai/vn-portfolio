@@ -11,7 +11,7 @@ const topics = [
     "Certifications & Learning",
     "Career & Self-Taught Journey",
     "Advanced Cybersecurity & SOC Skills",
-    "Software,Cloud & DevSecOps",
+    "Software Cloud & DevSecOps",
     "Hands-On Labs & Tools",
     "Freelance & Remote Work",
     "Cyber Talk Digest",
