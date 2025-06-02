@@ -36,7 +36,13 @@ const Article = () => {
       <h1>{article?.title}</h1>
 
       {/* Display article date */}
-      <span className="article-date">{article.date}</span>
+      <span className="article-date">
+        {new Date(article.date).toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </span>
 
       {/* Display article image */}
       <img
@@ -46,7 +52,10 @@ const Article = () => {
       />
 
       {/* Display article content */}
-      <div className="article-content" dangerouslySetInnerHTML={{ __html: article.content }} />
+      <div
+        className="article-content"
+        dangerouslySetInnerHTML={{ __html: article.content }}
+      />
 
       {/* Back Button */}
       <button className="back-btn" onClick={() => navigate(-1)}>
