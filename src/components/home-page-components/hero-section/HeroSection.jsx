@@ -41,7 +41,7 @@ function HeroSection() {
           <Link to="/projects" className="hero-btn">
             💻 View Projects
           </Link>
-          <Link to="/blog" className="hero-btn">
+          <Link to="/blog/topic/all" className="hero-btn">
             ✍️ View Blog
           </Link>
           <a

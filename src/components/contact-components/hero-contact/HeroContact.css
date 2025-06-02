@@ -91,7 +91,25 @@
     text-decoration: none;
     display: inline-block;
   }
-  
+
+  .cta-button-blog {
+    text-decoration: none;
+  }
+  .cta-button-blog {
+  display: inline-block; 
+  background-color: #287371;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  min-width:10rem;
+}
   /* Mobile adjustment for hero section */
   @media (max-width: 768px) {
     .hero-title-contact {
