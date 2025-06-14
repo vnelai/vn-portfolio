@@ -35,7 +35,8 @@ const Article = () => {
       {/* Display article title */}
       <h1>{article?.title}</h1>
 
-      {/* Display article date */}
+      {/* Meta (date + author) */}
+    <div className="article-meta">
       <span className="article-date">
         {new Date(article.date).toLocaleDateString(undefined, {
           year: "numeric",
@@ -43,6 +44,21 @@ const Article = () => {
           day: "numeric",
         })}
       </span>
+
+      {/* Author */}
+      {article.author?.url ? (
+        <a
+          className="article-author"
+          href={article.author.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {article.author.name}
+        </a>
+      ) : (
+        <span className="article-author">{article.author?.name}</span>
+      )}
+    </div>
 
       {/* Display article image */}
       <img
