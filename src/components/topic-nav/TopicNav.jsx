@@ -10,7 +10,7 @@ const topics = [
    "Cybersecurity Fundamentals",
     "Certifications & Learning",
     "Career & Self-Taught Journey",
-    "Advanced Cybersecurity & SOC Skills",
+    "SOC & Cyber Analyst Skills",
     "Software Cloud & DevSecOps",
     "Hands-On Labs & Tools",
     "Freelance & Remote Work",

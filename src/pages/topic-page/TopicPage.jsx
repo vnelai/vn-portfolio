@@ -48,8 +48,8 @@ function TopicPage() {
   "career-self-taught-journey":
     "My personal journey into cybersecurity. I'm sharing what I’m learning, building, and figuring out along the way with curiosity and grit.",
 
-  "advanced-cybersecurity-soc-skills":
-    "Deep dives into SOC operations and advanced security skills. Focused on real tactics, blue team work, and what it takes to be sharp on the job.",
+  "SOC & Cyber Analyst Skills":
+    "Hands-on skills, tools, and workflows every SOC or Cybersecurity Analyst needs to know. From threat detection and log analysis to SIEM tuning and incident response, this section is built to make you job-ready.",
 
   "software-cloud-devsecops":
     "Covering cloud security, AppSec, and DevSecOps practices. From securing AWS and Azure to hardening your app code and pipelines.",
