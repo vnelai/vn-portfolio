@@ -97,6 +97,22 @@ body.dark .blog-card a {
   text-align: center;
 }
 
+.meta-info {
+  display: flex;
+  justify-content: center; /* 👈 center it horizontally */
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+.meta-info span:nth-child(2) {
+  color: #555;
+  font-size: 0.6rem;
+}
+
 
 /* Media Query for Blog Mobile Responsiveness */
 @media (max-width: 768px) {
