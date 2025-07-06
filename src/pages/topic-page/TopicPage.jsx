@@ -48,7 +48,7 @@ function TopicPage() {
   "career-self-taught-journey":
     "My personal journey into cybersecurity. I'm sharing what I’m learning, building, and figuring out along the way with curiosity and grit.",
 
-  "soc-cyber-analyst-skills":
+  "soc-&-cyber-analyst-skills":
     "Hands-on skills, tools, and workflows every SOC or Cybersecurity Analyst needs to know. From threat detection and log analysis to SIEM tuning and incident response, this section is built to make you job-ready.",
 
   "software-cloud-devsecops":
