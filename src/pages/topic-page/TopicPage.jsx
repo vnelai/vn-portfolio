@@ -94,7 +94,7 @@ function TopicPage() {
       </h1>
       <p className="topic-description">
         {topicSlug === "all"
-          ? "Labs, skills, news, and lessons — everything I’m learning across fundamentals, cloud, SOC tools, and certifications."
+          ? "Labs, skills, news, and lessons. Everything I’m learning across fundamentals, cloud, SOC tools, and certifications."
           : topicDescriptions[slugify(topicSlug)] ||
             `All articles about ${displayTopic}`}
       </p>
