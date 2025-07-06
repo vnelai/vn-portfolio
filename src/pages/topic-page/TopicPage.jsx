@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import TopicNav from "../../components/topic-nav/TopicNav";
+import TopicNav from "../../components/blog-components/topic-nav/TopicNav";
 import Blog from "../../components/blog-components/blog/Blog";
 import { supabase } from "../../lib/supabaseClient";
 import "./TopicPage.css";

@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom"; // Removed BrowserRouter impor
 import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
-import BlogPage from "./pages/BlogPage";
 import TopicPage from "./pages/topic-page/TopicPage";
 import Article from "./pages/article-page/Article";
 import Projects from "./pages/Projects";
@@ -43,7 +42,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-me" element={<AboutMe isDarkMode={isDarkMode} />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/topic/:topicSlug" element={<TopicPage />} />
           <Route path="/blog/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
