@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Blog.css";
 
@@ -13,10 +13,17 @@ const estimateReadingTime = (content) => {
 
 const Blog = ({ articles }) => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Sort articles by most recent first
   const sortedArticles = [...articles].sort(
     (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
+  // Filter articles by search input
+  const filteredAndSearched = sortedArticles.filter((article) =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   if (sortedArticles.length === 0) {
@@ -29,8 +36,19 @@ const Blog = ({ articles }) => {
 
   return (
     <div className="blog-container">
+      {/* 🔍 Search Bar */}
+      <div className="blog-search">
+        <input
+          type="text"
+          placeholder="Search articles..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
+
+      {/* 🔽 Articles */}
       <div className="blog-grid">
-        {sortedArticles.map((article) => (
+        {filteredAndSearched.map((article) => (
           <div key={article.id} className="blog-card">
             <img src={article.image} alt={article.title} />
             <h2>{article.title}</h2>
