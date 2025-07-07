@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import TopicNav from "../../components/blog-components/topic-nav/TopicNav";
 import Blog from "../../components/blog-components/blog/Blog";
 import { supabase } from "../../lib/supabaseClient";
-import "./TopicPage.css";
+import "./BlogPage.css";
 
-function TopicPage() {
+function BlogPage() {
   const { topicSlug } = useParams();
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showLoader, setShowLoader] = useState(false); // ✅ required for delay logic
+
 
   useEffect(() => {
     const loaderTimeout = setTimeout(() => {
@@ -103,4 +105,4 @@ function TopicPage() {
   );
 }
 
-export default TopicPage;
+export default BlogPage;

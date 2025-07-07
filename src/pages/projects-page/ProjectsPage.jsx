@@ -1,77 +1,95 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ProjectNav from "../../components/projects-components/project-nav";
-import ProjectsComp from "../../components/projects-components/projects/ProjectsComp";
-import projects from "../data/projects"; // Your full list of project objects
-
-// 🔧 Utility
-const slugify = (text) =>
-  text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
-
-// 💬 Descriptions for each project category
-const categoryDescriptions = {
-  "blue-team-projects":
-    "SOC-focused projects: log analysis, threat detection, SIEM workflows, incident response, and defensive tooling.",
-
-  "red-team-projects":
-    "Offensive security labs: exploitation, malware analysis, persistence techniques, and attacker emulation.",
-
-  "full-stack-development":
-    "Secure end-to-end web applications with protected APIs, auth systems, and hardened infrastructure.",
-
-  "cloud-devops":
-    "Secure cloud deployments, IAM setups, and DevSecOps pipelines built with automation and resilience.",
-
-  "ai-automation":
-    "AI-powered enrichment tools, triage agents, and intelligent automation for security operations.",
-
-  "freelance-projects":
-    "Client-facing deliverables that prioritize security and privacy — from audits to full-stack builds.",
-};
+import ProjectNav from "../../components/projects-components/project-nav/ProjectNav";
+import Projects from "../../components/projects-components/projects/Projects";
+import { supabase } from "../../lib/supabaseClient";
+import "../blog-page/BlogPage.css";
 
 function ProjectsPage() {
-  const { categorySlug } = useParams(); // pulled from route param like /projects/category/blue-team-projects
-  const [search, setSearch] = useState("");
+  const { topicSlug } = useParams();
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showLoader, setShowLoader] = useState(false); // ✅ required for delay logic
 
-  const displayCategory =
-    categorySlug === "all" || !categorySlug
+
+  useEffect(() => {
+    const loaderTimeout = setTimeout(() => {
+      setShowLoader(true);
+    }, 300); // Show loader only if loading takes longer than 300ms
+
+    const fetchProjects = async () => {
+      const { data, error } = await supabase.from("projects").select("*");
+      if (error) {
+        console.error("Error fetching projects:", error);
+      } else {
+        setProjects(data);
+      }
+      setLoading(false);
+      clearTimeout(loaderTimeout); // Clear timeout if data loads quickly
+    };
+
+    fetchProjects();
+  }, []);
+
+  // Filter projects by projectSlug (which is the URL value)
+  // Slugify function (same one used in Topics.jsx)
+  const slugify = (text) =>
+    text
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-");
+
+  // Category Descriptions
+  const topicDescriptions = {
+    "blue-team-projects":
+      "SOC-focused projects: log analysis, threat detection, SIEM workflows, incident response, and defensive tooling.",
+    "red-team-projects":
+      "Offensive security labs: exploitation, malware analysis, persistence techniques, and attacker emulation.",
+    "full-stack-development":
+      "Secure end-to-end web apps with protected APIs, auth systems, and hardened infrastructure.",
+    "cloud-devops":
+      "Secure cloud deployments, IAM setups, and DevSecOps pipelines built with automation and resilience.",
+    "ai-automation":
+      "AI-powered enrichment tools, triage agents, and intelligent automation for security ops.",
+    "freelance-projects":
+      "Client-facing deliverables that prioritize security and privacy — from audits to full-stack builds.",
+  };
+
+  // Filter projects by checking slug match
+  const filteredProjects=
+    topicSlug === "all"
+      ? projects
+      : projects.filter((project) =>
+          projects.topics.some((topic) => slugify(topic) === topicSlug)
+        );
+
+  const displayTopic =
+    topicSlug === "all"
       ? "All Projects"
-      : categorySlug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+      : topicSlug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
-  const filteredProjects = projects.filter((project) => {
-    const matchesCategory =
-      !categorySlug || categorySlug === "all"
-        ? true
-        : project.topics.some((topic) => slugify(topic) === categorySlug);
-
-    const matchesSearch =
-      project.title.toLowerCase().includes(search.toLowerCase()) ||
-      project.description.toLowerCase().includes(search.toLowerCase());
-
-    return matchesCategory && matchesSearch;
-  });
+  if (loading) {
+    return (
+      <div className="loading-wrapper">
+        <div className="loading-spinner"></div>
+        <p className="loading-message">Loading projects...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="topic-page">
       <ProjectNav />
-
-      <h1 className="topic-title">{displayCategory}</h1>
+      <h1 className="topic-title">
+        {topicSlug === "all" ? "Explore the Full Collection" : displayTopic}
+      </h1>
       <p className="topic-description">
-        {categorySlug === "all" || !categorySlug
-          ? "Cybersecurity builds, labs, tools, and full-stack experiences — all in one place."
-          : categoryDescriptions[slugify(categorySlug)] ||
-            `All projects about ${displayCategory}`}
+        {topicSlug === "all"
+          ? "Labs, builds, and real-world tools across Blue Team ops, full-stack dev, AI, and cloud — all from a learner’s hands-on journey."
+          : topicDescriptions[slugify(topicSlug)] ||
+            `All projects about ${displayTopic}`}
       </p>
-
-      <input
-        type="text"
-        className="topic-search"
-        placeholder="Search projects..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-
-      <ProjectsComp projects={filteredProjects} />
+      <Projects projects={filteredProjects} />
     </div>
   );
 }

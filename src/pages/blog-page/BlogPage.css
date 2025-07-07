@@ -19,16 +19,7 @@
     margin: 0 auto 1.5rem;
     opacity: 0.8;
   }
-  
-  .loading-message {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: inherit;
-    text-align: center;
-    margin-top: 6rem;
-    opacity: 0.8;
-  }
-    
+ 
   .loading-wrapper {
     display: flex;
     flex-direction: column;
@@ -62,8 +53,9 @@
     font-weight: 500;
     color: inherit;
     opacity: 0.8;
+    margin-top: 6rem;
+    opacity: 0.8;
   }
-  
 
   @media (max-width: 768px) {
     .topic-title {

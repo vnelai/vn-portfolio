@@ -37,7 +37,7 @@ const Blog = ({ articles }) => {
   return (
     <div className="blog-container">
       {/* 🔍 Search Bar */}
-      <div className="blog-search">
+      <div className="search-bar">
         <input
           type="text"
           placeholder="Search articles..."
@@ -46,7 +46,7 @@ const Blog = ({ articles }) => {
         />
       </div>
 
-      {/* 🔽 Articles */}
+      {/* 🔽 Articles Grid */}
       <div className="blog-grid">
         {filteredAndSearched.map((article) => (
           <div key={article.id} className="blog-card">

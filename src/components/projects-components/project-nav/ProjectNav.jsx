@@ -1,13 +1,13 @@
 // src/components/ProjectNav.jsx
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import "./ProjectNav.css"; // Create this CSS file or reuse your blog nav styles
+import "../../blog-components/topic-nav/TopicNav.css"; 
 
-// Utility to convert category to slug
+// Keep the slugify util consistent
 const slugify = (text) =>
   text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
 
-const categories = [
+const topics = [
   "Full-Stack Development",
   "Cybersecurity Projects",
   "Cloud & DevOps",
@@ -18,25 +18,25 @@ const categories = [
 ];
 
 const ProjectNav = () => {
-  const { categorySlug } = useParams();
+  const { topicSlug } = useParams();
 
   return (
-    <nav className="project-nav">
-      {categories.map((category) => {
-        const slug = slugify(category);
-        const isActive = slug === categorySlug;
+    <nav className="topic-nav">
+      {topics.map((topic) => {
+        const slug = slugify(topic);
+        const isActive = slug === topicSlug;
 
         return (
           <Link
             key={slug}
-            to={`/projects/category/${slug}`}
-            className={`project-nav-item ${isActive ? "active" : ""}`}
+            to={`/projects/topic/${slug}`}
+            className={`topic-nav-item ${isActive ? "active" : ""}`}
           >
-            {category}
+            {topic}
           </Link>
         );
       })}
-      <Link to="/projects/category/all" className="project-nav-item">
+      <Link to="/projects/topic/all" className="topic-nav-item">
         All
       </Link>
     </nav>
