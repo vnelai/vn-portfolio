@@ -113,6 +113,28 @@ body.dark .projects-card a {
   font-size: 0.6rem;
 }
 
+/* Main author span */
+.projects-card .author {
+  font-size: 0.85rem;
+  color: #ccc;
+  display: block;
+  text-align: center;
+  margin: -0.25rem 0 0.5rem;
+  font-weight: 500;
+}
+
+/* Author link inside the span */
+.projects-card .author a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+  margin-left: 0rem;
+}
+
+.projects-card .author a:hover {
+  text-decoration: underline; 
+}
 
 /* Media Query for Projects Mobile Responsiveness */
 @media (max-width: 768px) {

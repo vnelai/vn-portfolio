@@ -12,9 +12,10 @@ const Projects = ({ projects }) => {
   );
 
   // Filter projects by search input
-  const filteredAndSearched = sortedProjects.filter((project) =>
-    project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    project.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredAndSearched = sortedProjects.filter(
+    (project) =>
+      project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   if (sortedProjects.length === 0) {
@@ -43,6 +44,20 @@ const Projects = ({ projects }) => {
           <div key={project.slug} className="projects-card">
             <img src={project.image} alt={project.title} />
             <h2>{project.title}</h2>
+            <span className="author">
+              By{" "}
+              {project.author_url ? (
+                <a
+                  href={project.author_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.author_name}
+                </a>
+              ) : (
+                project.author_name
+              )}
+            </span>
             <p>{project.excerpt}</p>
 
             {/* 🧩 Topics */}
@@ -57,7 +72,7 @@ const Projects = ({ projects }) => {
               </div>
             )}
 
-            {/* 🕒 Date + Author */}
+            {/* 🕒 Date*/}
             <div className="meta-info">
               <span>
                 {new Date(project.date).toLocaleDateString(undefined, {
@@ -65,20 +80,6 @@ const Projects = ({ projects }) => {
                   month: "long",
                   day: "numeric",
                 })}
-              </span>
-              <span>•</span>
-              <span>
-                {project.author_url ? (
-                  <a
-                    href={project.author_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.author_name}
-                  </a>
-                ) : (
-                  project.author_name
-                )}
               </span>
             </div>
 
