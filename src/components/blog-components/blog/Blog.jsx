@@ -21,9 +21,10 @@ const Blog = ({ articles }) => {
   );
 
   // Filter articles by search input
-  const filteredAndSearched = sortedArticles.filter((article) =>
-    article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredAndSearched = sortedArticles.filter(
+    (article) =>
+      article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   if (sortedArticles.length === 0) {
@@ -52,6 +53,20 @@ const Blog = ({ articles }) => {
           <div key={article.id} className="blog-card">
             <img src={article.image} alt={article.title} />
             <h2>{article.title}</h2>
+            <span className="author">
+              By{" "}
+              {article.author.url ? (
+                <a
+                  href={article.author.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {article.author.name}
+                </a>
+              ) : (
+                article.author.name
+              )}
+            </span>
             <p>{article.excerpt}</p>
 
             {/* ⏱️ Reading time + date */}
