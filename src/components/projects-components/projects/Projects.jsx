@@ -11,14 +11,15 @@ const Projects = ({ projects }) => {
     (a, b) => new Date(b.date) - new Date(a.date)
   );
 
-  // Filter projects by search input
+  // 🔍 Filter projects by search input
   const filteredAndSearched = sortedProjects.filter(
     (project) =>
       project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  if (sortedProjects.length === 0) {
+  // 🛑 If no matches found after search/filter
+  if (filteredAndSearched.length === 0) {
     return (
       <h2 className="no-projects-message">
         No projects available for the selected topic.

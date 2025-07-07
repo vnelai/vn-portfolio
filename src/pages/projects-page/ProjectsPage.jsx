@@ -11,7 +11,6 @@ function ProjectsPage() {
   const [loading, setLoading] = useState(true);
   const [showLoader, setShowLoader] = useState(false); // ✅ required for delay logic
 
-
   useEffect(() => {
     const loaderTimeout = setTimeout(() => {
       setShowLoader(true);
@@ -56,11 +55,13 @@ function ProjectsPage() {
   };
 
   // Filter projects by checking slug match
-  const filteredProjects=
+  const filteredProjects =
     topicSlug === "all"
       ? projects
-      : projects.filter((project) =>
-          projects.topics.some((topic) => slugify(topic) === topicSlug)
+      : projects.filter(
+          (project) =>
+            Array.isArray(project.topics) &&
+            project.topics.some((topic) => slugify(topic) === topicSlug)
         );
 
   const displayTopic =
