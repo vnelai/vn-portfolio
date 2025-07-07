@@ -64,7 +64,7 @@ const Projects = ({ projects }) => {
             {/* 🧰 Skills Applied */}
             {Array.isArray(project.topics) && project.topics.length > 0 && (
               <div className="project-technologies">
-                <strong>Skills Applied:</strong> {project.topics.join(", ")}
+                <strong>Skills :</strong> {project.topics.join(", ")}
               </div>
             )}
 
@@ -99,7 +99,7 @@ const Projects = ({ projects }) => {
                   YouTube
                 </a>
               )}
-              <Link to={`/projects/${project.slug}`}>Details</Link>
+              <Link to={`/blog/${project.slug}`}>Article</Link>
             </div>
           </div>
         ))}
