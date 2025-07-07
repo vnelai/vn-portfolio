@@ -95,8 +95,9 @@
   .cta-button-blog {
     text-decoration: none;
   }
+
   .cta-button-blog {
-  display: inline-block; 
+  display: inline-block;
   background-color: #287371;
   color: white;
   border: none;
@@ -109,7 +110,9 @@
   font-weight: bold;
   margin-top: 0.5rem;
   min-width:10rem;
+  margin-right: 1rem;
 }
+
   /* Mobile adjustment for hero section */
   @media (max-width: 768px) {
     .hero-title-contact {
