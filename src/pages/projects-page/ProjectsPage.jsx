@@ -85,7 +85,7 @@ function ProjectsPage() {
       </h1>
       <p className="topic-description">
         {topicSlug === "all"
-          ? "Labs, builds, and real-world tools across Blue Team ops, full-stack dev, AI, and cloud — all from a learner’s hands-on journey."
+          ? "Labs, builds, and real-world tools across Blue Team ops, full-stack dev, AI, and cloud. All from a learner’s hands-on journey."
           : topicDescriptions[slugify(topicSlug)] ||
             `All projects about ${displayTopic}`}
       </p>
