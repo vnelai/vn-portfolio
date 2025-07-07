@@ -38,7 +38,7 @@ function HeroSection() {
           user-friendly web applications.
         </h2>
         <div className="hero-btns-div">
-          <Link to="/projects" className="hero-btn">
+          <Link to="/projects/topic/all" className="hero-btn">
             💻 View Projects
           </Link>
           <Link to="/blog/topic/all" className="hero-btn">

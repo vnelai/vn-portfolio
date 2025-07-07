@@ -30,7 +30,7 @@ const toggleMenu = () => {
               <a href="/about-me">About</a>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <a href="/projects/topic/all">Projects</a>
             </li>
             <li>
               <a href="/blog/topic/all">Blog</a>

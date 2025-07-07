@@ -20,7 +20,7 @@ const HeroContact = () => {
           the same. Let’s safeguard the web, together.
         </p>
         <div className="cta-buttons-blog">
-          <Link to="/projects" className="cta-button-blog">
+          <Link to="/projects/topic/all" className="cta-button-blog">
             💼 View My Work
           </Link>
 
