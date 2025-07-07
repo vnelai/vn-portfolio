@@ -60,15 +60,10 @@ const Projects = ({ projects }) => {
             </span>
             <p>{project.excerpt}</p>
 
-            {/* 🧩 Topics */}
-            {Array.isArray(project.topics) && (
+            {/* 🧰 Skills Applied */}
+            {Array.isArray(project.topics) && project.topics.length > 0 && (
               <div className="project-technologies">
-                <strong>Topics</strong>
-                <ul>
-                  {project.topics.map((topic, i) => (
-                    <li key={i}>{topic}</li>
-                  ))}
-                </ul>
+                <strong>Skills Applied:</strong> {project.topics.join(", ")}
               </div>
             )}
 

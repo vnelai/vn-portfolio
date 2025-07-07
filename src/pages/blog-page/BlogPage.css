@@ -41,6 +41,13 @@
   .dark .loading-spinner {
     border-top-color: #7b4c9f;
   }
+
+  .project-technologies {
+  text-align: left;
+  margin-left: 1rem;
+
+}
+
   
   @keyframes spin {
     to {
