@@ -32,10 +32,9 @@ function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1 ref={h2Ref}>Software Engineer & Cybersecurity Professional</h1>
+        <h1 ref={h2Ref}>Cybersecurity Analyst with an Engineer’s Mindset</h1>
         <h2 ref={pRef}>
-          Passionate about finding vulnerabilities and building secure,
-          user-friendly web applications.
+          Driven to defend, I analyze threats, secure systems, and safeguard the people who rely on them.
         </h2>
         <div className="hero-btns-div">
           <Link to="/projects/topic/all" className="hero-btn">
