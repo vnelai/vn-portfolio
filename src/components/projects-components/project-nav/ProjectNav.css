@@ -31,3 +31,12 @@
   color: #5c2d91;
   font-weight: bold;
 }
+
+/* Dark mode scrollbar color */
+  .dark .topic-nav::-webkit-scrollbar-thumb {
+    background-color: #7b4c9f;
+  }
+  
+  .dark .topic-nav::-webkit-scrollbar-track {
+    background-color: #4a2c6a;
+  }
