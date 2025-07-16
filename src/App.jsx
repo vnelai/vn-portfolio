@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/not-found/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import Robots from  "../public/robots.txt";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/blog/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/robots.txt" element={Robots}/>
         </Routes>
       </div>
       <Footer />
