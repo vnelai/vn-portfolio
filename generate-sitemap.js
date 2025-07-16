@@ -10,76 +10,85 @@ function getDate(dateString) {
 }
 
 function buildUrl(loc, lastmod, priority = 0.75) {
-  return `
-  <url>
-    <loc>${loc}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <priority>${priority}</priority>
-  </url>`;
+  return `<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><priority>${priority}</priority></url>`;
 }
 
 async function generateSitemap() {
-  const urls = [];
+  try {
+    const urls = [];
 
-  // Static pages
-  urls.push(buildUrl(`${BASE_URL}/`, getDate(new Date()), 1.0));
-  urls.push(buildUrl(`${BASE_URL}/about-me`, getDate(new Date()), 0.8));
-  urls.push(buildUrl(`${BASE_URL}/contact`, getDate(new Date()), 0.8));
-  urls.push(buildUrl(`${BASE_URL}/blog/topic/all`, getDate(new Date()), 0.8));
-  urls.push(buildUrl(`${BASE_URL}/projects/topic/all`, getDate(new Date()), 0.8));
+    // === STATIC PAGES ===
+    const today = getDate(new Date());
+    urls.push(buildUrl(`${BASE_URL}/`, today, 1.0));
+    urls.push(buildUrl(`${BASE_URL}/about-me`, today, 0.8));
+    urls.push(buildUrl(`${BASE_URL}/contact`, today, 0.8));
+    urls.push(buildUrl(`${BASE_URL}/blog/topic/all`, today, 0.8));
+    urls.push(buildUrl(`${BASE_URL}/projects/topic/all`, today, 0.8));
 
-  // === BLOG POSTS ===
-  const { data: posts } = await supabase.from('posts').select('slug, date, topics');
-  const topicSet = new Set();
+    // === BLOG POSTS ===
+    const { data: posts, error: postErr } = await supabase
+      .from('posts')
+      .select('slug, date, topics');
 
-  (posts || []).forEach(post => {
-    if (!post.slug || typeof post.slug !== 'string') return;
+    if (postErr) throw postErr;
 
-    const safeSlug = encodeURIComponent(post.slug);
-    const date = getDate(post.date || new Date());
+    const blogTopics = new Set();
 
-    urls.push(buildUrl(`${BASE_URL}/blog/${safeSlug}`, date, 0.8));
+    (posts || []).forEach(post => {
+      if (!post.slug || typeof post.slug !== 'string') return;
 
-    (post.topics || []).forEach(topic => {
-      if (typeof topic === 'string' && topic.trim()) {
-        topicSet.add(topic.trim());
-      }
+      const safeSlug = encodeURIComponent(post.slug);
+      const date = getDate(post.date || new Date());
+      urls.push(buildUrl(`${BASE_URL}/blog/${safeSlug}`, date, 0.8));
+
+      (post.topics || []).forEach(topic => {
+        if (typeof topic === 'string' && topic.trim()) {
+          blogTopics.add(topic.trim());
+        }
+      });
     });
-  });
 
-  Array.from(topicSet).sort().forEach(topic => {
-    const safeTopic = encodeURIComponent(topic);
-    urls.push(buildUrl(`${BASE_URL}/blog/topic/${safeTopic}`, getDate(new Date()), 0.7));
-  });
-
-  // === PROJECTS ===
-  const { data: projects } = await supabase.from('projects').select('slug, date, topics');
-  const projectTopicSet = new Set();
-
-  (projects || []).forEach(project => {
-    if (!project.slug || typeof project.slug !== 'string') return;
-
-    (project.topics || []).forEach(topic => {
-      if (typeof topic === 'string' && topic.trim()) {
-        projectTopicSet.add(topic.trim());
-      }
+    Array.from(blogTopics).sort().forEach(topic => {
+      const safeTopic = encodeURIComponent(topic);
+      urls.push(buildUrl(`${BASE_URL}/blog/topic/${safeTopic}`, today, 0.7));
     });
-  });
 
-  Array.from(projectTopicSet).sort().forEach(topic => {
-    const safeTopic = encodeURIComponent(topic);
-    urls.push(buildUrl(`${BASE_URL}/projects/topic/${safeTopic}`, getDate(new Date()), 0.7));
-  });
+    // === PROJECT TOPICS ===
+    const { data: projects, error: projErr } = await supabase
+      .from('projects')
+      .select('slug, date, topics');
 
-  // === OUTPUT ===
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.join('\n')}
-</urlset>`;
+    if (projErr) throw projErr;
 
-  const outputPath = path.resolve('./public/sitemap.xml');
-  fs.writeFileSync(outputPath, sitemap.trim());
-  console.log('✅ Sitemap generated at public/sitemap.xml');
+    const projectTopics = new Set();
+
+    (projects || []).forEach(project => {
+      if (!project.slug || typeof project.slug !== 'string') return;
+
+      (project.topics || []).forEach(topic => {
+        if (typeof topic === 'string' && topic.trim()) {
+          projectTopics.add(topic.trim());
+        }
+      });
+    });
+
+    Array.from(projectTopics).sort().forEach(topic => {
+      const safeTopic = encodeURIComponent(topic);
+      urls.push(buildUrl(`${BASE_URL}/projects/topic/${safeTopic}`, today, 0.7));
+    });
+
+    // === GENERATE XML ===
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+      urls.join('\n') +
+      `\n</urlset>`;
+
+    const outputPath = path.resolve('./public/sitemap.xml');
+    fs.writeFileSync(outputPath, sitemap.trim(), 'utf8');
+    console.log('✅ Sitemap generated at public/sitemap.xml');
+  } catch (err) {
+    console.error('❌ Failed to generate sitemap:', err.message);
+  }
 }
 
 generateSitemap();
