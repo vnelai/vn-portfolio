@@ -14,18 +14,12 @@ const HeroAbout = () => {
         <h1 className="hero-title-about">My Tech Journey</h1>
 
         <h2 className="hero-intro">
-          Hey, I’m Virginia (aka V⚡).
-          <br className="desktop-br" />
-          <span className="line2">
-            Cybersecurity professional & tech learner.
-          </span>
+          Hey, I’m Virginia (aka V⚡). Cybersecurity professional & tech learner.
         </h2>
-
-        <p className="hero-subtitle-about">
+        <h3 className="hero-subtitle-about">
           I’m passionate about protecting systems and data,
-          <br className="desktop-br" />
           building secure software and sharing what I learn along the way.
-        </p>
+        </h3>
 
         <div className="cta-buttons-about">
           <button

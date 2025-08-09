@@ -50,8 +50,6 @@
   text-shadow: 2px 2px 8px rgba(0,0,0,.7);
 }
 
-.hero-intro .line2 { display: block; }
-
 .hero-subtitle-about{
   font-size: 1.15rem;  /* slightly smaller for balance */
   line-height: 1.6;
@@ -119,7 +117,7 @@ a.cta-button-about.connect {
 
   .cta-button-about,
   .cta-button-about.connect {
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem 1.2rem;
     font-size: 1rem;
   }
 
