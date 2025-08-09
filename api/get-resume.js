@@ -1,4 +1,4 @@
-// api/get-resume.js  (Vercel serverless function, CommonJS to avoid ESM issues)
+// api/get-resume.js  (CommonJS for Vercel functions)
 const { createClient } = require('@supabase/supabase-js');
 
 const supabase = createClient(
@@ -6,28 +6,33 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
+// Set your file name here once
+const storedFileName = 'Junior-Cyber-Analyst-Resume-VNelai-8-25.pdf'; // Supabase object name
+const downloadFileName = 'Virginia-Nelai-Resume.pdf'; // Pretty name shown to recruiters
+
 module.exports = async (req, res) => {
   try {
-    // 1) log
+    // 1️⃣ Log the download
     await supabase.from('resume_downloads').insert({
-      ip: req.headers['x-forwarded-for'] || req.socket?.remoteAddress || null,
+      ip: (req.headers['x-forwarded-for'] || '').split(',')[0] || req.socket?.remoteAddress || null,
       user_agent: req.headers['user-agent'] || null,
       referer: req.headers['referer'] || null,
     });
 
-    // 2) fetch from private bucket (update filename)
+    // 2️⃣ Fetch from Supabase bucket
     const { data, error } = await supabase
       .storage
-      .from('resume')
-      .download('Virginia-Nelai-Resume.pdf');
+      .from('resume') // bucket name
+      .download(storedFileName);
 
     if (error) throw error;
 
-    // 3) stream to client
+    // 3️⃣ Send the file with a clean name
     const buf = Buffer.from(await data.arrayBuffer());
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename="Virginia-Nelai-Resume.pdf"');
+    res.setHeader('Content-Disposition', `attachment; filename="${downloadFileName}"`);
     res.status(200).send(buf);
+
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to download resume' });
