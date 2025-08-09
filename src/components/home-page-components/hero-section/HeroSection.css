@@ -42,7 +42,7 @@
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  margin: 0rem 6rem 3rem 6rem;
+  margin: 0rem 6rem 5rem 6rem;
 }
 
 .hero-content h2 {
@@ -87,7 +87,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .hero-btn {
