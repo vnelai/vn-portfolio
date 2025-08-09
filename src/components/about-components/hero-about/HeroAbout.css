@@ -45,7 +45,7 @@
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.3;
-  margin: 0 auto;
+  margin: 1 auto;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0,0,0,.7);
 }
@@ -79,6 +79,7 @@
   border-radius: 3rem;
   font-weight: bold;
   margin-top: 0.5rem;
+  text-decoration: none;
 }
 
 .cta-button-about:hover {

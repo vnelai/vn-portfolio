@@ -3,9 +3,11 @@ import "./HeroAbout.css";
 import { Link } from "react-router-dom";
 
 const HeroAbout = () => {
-  const scrollToSection = (id) => {
+  const scrollToSection = (id, offset = 80) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.pageYOffset - offset; // adjust for fixed header
+    window.scrollTo({ top: y, behavior: "smooth" });
   };
 
   return (
@@ -14,11 +16,12 @@ const HeroAbout = () => {
         <h1 className="hero-title-about">My Tech Journey</h1>
 
         <h2 className="hero-intro">
-          Hey, I’m Virginia (aka V⚡). Cybersecurity professional & tech learner.
+          Hey, I’m Virginia (aka V⚡). Cybersecurity professional & tech
+          learner.
         </h2>
         <h3 className="hero-subtitle-about">
-          I’m passionate about protecting systems and data,
-          building secure software and sharing what I learn along the way.
+          I’m passionate about protecting systems and data, building secure
+          software and sharing what I learn along the way.
         </h3>
 
         <div className="cta-buttons-about">
@@ -28,13 +31,10 @@ const HeroAbout = () => {
           >
             🚀 View My Journey
           </button>
-          <button
-            onClick={() => scrollToSection("skills")}
-            className="cta-button-about"
-          >
+          <Link to="/projects/topic/all" className="cta-button-about">
             💻 View My Skills
-          </button>
-          <Link to="/blog" className="cta-button-about connect">
+          </Link>
+          <Link to="/blog/topic/all" className="cta-button-about connect">
             📖 Explore My Blog
           </Link>
         </div>

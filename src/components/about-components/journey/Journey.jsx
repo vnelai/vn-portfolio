@@ -3,7 +3,7 @@ import "./Journey.css";
 
 function Journey({ isDarkMode }) {
   return (
-    <section className="about-container">
+    <section id="journey" className="about-container">
       <div className="about-content">
         {/* Left Side - Text */}
         <div className="about-text">
@@ -43,8 +43,8 @@ function Journey({ isDarkMode }) {
           <img
             src={
               isDarkMode
-                ? `/PURPLE2 GRADIENT.png`
-                : `/TEAL GRADIENT.png`
+                ? "/PURPLE2 GRADIENT.png"
+                : "/TEAL GRADIENT.png"
             }
             alt="professional-pic"
           />
