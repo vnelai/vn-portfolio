@@ -10,7 +10,6 @@ import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/not-found/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
-import Resume from "./"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
