@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroAbout.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const HeroAbout = () => {
   const scrollToSection = (id) => {
@@ -12,8 +12,21 @@ const HeroAbout = () => {
     <section className="hero-section-about">
       <div className="hero-content-about">
         <h1 className="hero-title-about">My Tech Journey</h1>
-        <h2>Hey, I’m Virginia (aka V⚡) — builder, hacker, and tech explorer.</h2>
-        <p>I’m breaking into tech with a love for cybersecurity, software, and sharing what I learn.</p>
+
+        <h2 className="hero-intro">
+          Hey, I’m Virginia (aka V⚡).
+          <br className="desktop-br" />
+          <span className="line2">
+            Cybersecurity professional & tech learner.
+          </span>
+        </h2>
+
+        <p className="hero-subtitle-about">
+          I’m passionate about protecting systems and data,
+          <br className="desktop-br" />
+          building secure software and sharing what I learn along the way.
+        </p>
+
         <div className="cta-buttons-about">
           <button
             onClick={() => scrollToSection("journey")}
@@ -27,10 +40,7 @@ const HeroAbout = () => {
           >
             💻 View My Skills
           </button>
-          <Link
-            to="/blog"
-            className="cta-button-about connect"
-          >
+          <Link to="/blog" className="cta-button-about connect">
             📖 Explore My Blog
           </Link>
         </div>

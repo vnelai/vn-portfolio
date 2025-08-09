@@ -22,8 +22,8 @@ function FeaturedContent() {
             <h2>🚀 Featured Project: Smart Meal Planning for Busy Lives</h2>
             <p>
               Tired of guessing what’s for dinner? Meal Prep Pro helps you
-              search recipes, save favorites, and auto-build your shopping list
-              — all in one sleek, secure app. Built with React, Node.js, and
+              search recipes, save favorites, and auto-build your shopping list,
+              all in one sleek, secure app. Built with React, Node.js, and
               MongoDB, it’s designed for food lovers who crave simplicity. Tech
               meets taste. Let’s cook smarter.
             </p>
@@ -42,7 +42,7 @@ function FeaturedContent() {
             <p>
               From hospital hallways to the front lines of digital defense, I
               transitioned from healthcare to cybersecurity with zero tech
-              background — just grit, purpose, and a hunger to protect. This
+              background, just grit, purpose, and a hunger to protect. This
               post unpacks how I went from learning IT basics to earning
               multiple certs, diving into code, and securing real-world systems.
               If you're navigating your own self-taught journey or curious how
