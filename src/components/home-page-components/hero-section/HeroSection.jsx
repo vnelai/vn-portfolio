@@ -44,7 +44,7 @@ function HeroSection() {
             ✍️ View Blog
           </Link>
           <a
-            href="public/Cyber_Fellow_Resume-VNelai.pdf"
+            href="/api/get-resume"
             target="_blank"
             rel="noopener noreferrer"
             className="hero-btn"
