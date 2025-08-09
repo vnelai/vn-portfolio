@@ -28,7 +28,7 @@ const HeroContact = () => {
             📚 View Blog
           </Link>
           <a
-            href="https://discord.gg/qpeRhGs6"
+            href="https://discord.gg/Petv3mtA"
             className="cta-button-blog community"
             target="_blank"
             rel="noopener noreferrer"
