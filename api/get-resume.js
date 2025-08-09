@@ -26,10 +26,6 @@ export default async function handler(req, res) {
 
     const buf = Buffer.from(await data.arrayBuffer());
     res.setHeader("Content-Type", "application/pdf");
-    res.setHeader(
-      "Content-Disposition",
-      `inline; filename="${downloadFileName}"`
-    );
     res.status(200).send(buf);
   } catch (err) {
     console.error(err);
