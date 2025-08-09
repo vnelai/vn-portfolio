@@ -27,7 +27,7 @@
 
 .hero-content {
   text-align: center;
-  padding: 6rem 0 0 0;
+  padding: 0rem 0 0 0;
 }
 
 .hero-content > * {
@@ -42,7 +42,7 @@
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  margin: 0rem 14rem;
+  margin: 0rem 6rem 3rem 6rem;
 }
 
 .hero-content h2 {
@@ -131,12 +131,12 @@
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.2rem;
-    margin: 0rem 0.9rem;
+    margin: 0rem 0rem;
   }
 
   .hero-content h2 {
     font-size: 1.4rem;
-    margin: 1rem 1rem;
+    margin: 2rem 1rem;
   }
 
   .hero-btns-div {

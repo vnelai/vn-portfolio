@@ -34,7 +34,7 @@ function HeroSection() {
       <div className="hero-content">
         <h1 ref={h2Ref}>Cybersecurity Analyst with an Engineer’s Mindset</h1>
         <h2 ref={pRef}>
-          Driven to defend, I analyze threats, secure systems, and safeguard the people who rely on them.
+          I detect threats, secure systems, and protect the people behind them.
         </h2>
         <div className="hero-btns-div">
           <Link to="/projects/topic/all" className="hero-btn">
