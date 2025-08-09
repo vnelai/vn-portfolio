@@ -50,7 +50,7 @@ function ContactForm() {
         setSubmitted(false);
         setStatus("");
       }, 4000);
-      
+
     } catch (err) {
       console.error(err);
       setStatus("Failed — try again.");
@@ -126,7 +126,7 @@ function ContactForm() {
             </button>
           </div>
           {status && (
-            <p className="form-status" aria-live="polite">
+            <p className="thank-you" aria-live="polite">
               {status}
             </p>
           )}

@@ -76,6 +76,17 @@ textarea {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.thank-you {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #1e3a43; /* matches your form fields */
+  color: #90ee90; /* soft green text */
+  border: 1px solid #287371; /* same green as your button */
+  border-radius: 0.3125rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 /* To ensure the elements are aligned */
 input,
 textarea,
