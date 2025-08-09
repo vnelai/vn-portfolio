@@ -13,7 +13,6 @@
   color: var(--text-hero);
 }
 
-
 .hero-section::before {
   content: "";
   position: absolute;
@@ -21,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); 
+  background: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -52,12 +51,10 @@
   margin: 1.6rem 8.5rem;
 }
 
-
 .hero-content h1,
-.hero-content h2{
+.hero-content h2 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
-
 
 /* Hero Text Content Styling */
 .hero-content h1 {
@@ -75,7 +72,7 @@
 }
 
 .hero-content h1.visible,
-.hero-content h2.visible{
+.hero-content h2.visible {
   opacity: 1;
   transform: translateX(0); /* Move to original position */
 }
@@ -92,7 +89,7 @@
 
 .hero-btn {
   display: inline-block;
-  background-color: #287371;  
+  background-color: #287371;
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -106,7 +103,7 @@
   text-decoration: none;
   width: 80%;
   max-width: 10rem;
- }
+}
 
 .hero-btn:hover {
   background-color: #264653;
@@ -119,12 +116,51 @@
 
 /* Dark Mode Styling */
 .dark .hero-btn {
-  background-color: #7b4c9f;  
+  background-color: #7b4c9f;
   transition: background-color 0.3s ease;
 }
 
 .dark .hero-btn:hover {
   background: #5f3f8a;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -2rem; /* bleed for smooth edges */
+  width: calc(100% + 4rem);
+  height: calc(100% + 4rem);
+  pointer-events: none;
+  z-index: 0; /* behind text */
+
+  /* LIGHT MODE default (blue background) */
+  --mesh-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.5; /* adjust intensity */
+}
+
+.hero-bg .link {
+  stroke: var(--mesh-color);
+  stroke-width: 1;
+}
+
+.hero-bg .node {
+  fill: var(--mesh-color);
+}
+
+/* DARK MODE (purple background) */
+.dark .hero-bg {
+  --mesh-color: rgba(255, 255, 255, 0.14);
+  opacity: 0.4;
+}
+
+/* Ensure hero content is above background */
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 /* Mobile adjustment for hero section */
@@ -140,7 +176,7 @@
   }
 
   .hero-btns-div {
-    margin-top:1.2rem;
+    margin-top: 1.2rem;
     flex-direction: center;
     gap: 1.5rem;
     align-items: center;
@@ -148,10 +184,10 @@
 
   .hero-btn {
     padding: 0.6rem 1.2rem;
-    font-size: 1rem;   
-}
+    font-size: 1rem;
+  }
 
-.hero-content > * {
-  margin-bottom: 2.5rem;
-}
+  .hero-content > * {
+    margin-bottom: 2.5rem;
+  }
 }
