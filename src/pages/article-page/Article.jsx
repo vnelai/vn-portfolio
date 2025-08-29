@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { supabase } from "../../lib/supabaseClient";
 import "./Article.css";
+import "prismjs/themes/prism-tomorrow.css";
+import Prism from "prismjs";
 
 const Article = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [article, setArticle] = useState(null);
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
 
   useEffect(() => {
     const fetchArticle = async () => {
@@ -36,29 +42,29 @@ const Article = () => {
       <h1>{article?.title}</h1>
 
       {/* Meta (date + author) */}
-    <div className="article-meta">
-      <span className="article-date">
-        {new Date(article.date).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}
-      </span>
+      <div className="article-meta">
+        <span className="article-date">
+          {new Date(article.date).toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </span>
 
-      {/* Author */}
-      {article.author?.url ? (
-        <a
-          className="article-author"
-          href={article.author.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {article.author.name}
-        </a>
-      ) : (
-        <span className="article-author">{article.author?.name}</span>
-      )}
-    </div>
+        {/* Author */}
+        {article.author?.url ? (
+          <a
+            className="article-author"
+            href={article.author.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {article.author.name}
+          </a>
+        ) : (
+          <span className="article-author">{article.author?.name}</span>
+        )}
+      </div>
 
       {/* Display article image */}
       <img
