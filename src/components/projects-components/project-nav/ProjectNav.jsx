@@ -8,12 +8,18 @@ const slugify = (text) =>
   text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
 
 const topics = [
-  "AI & Machine Learning",
-  "Cybersecurity",
-  "Offensive Security",
-  "SOC & Analyst",
+  // Core Cybersecurity Projects
+  "Offensive Security (Red Team)",
+  "SOC & Analyst Skills (Blue Team)",
+  "Purple Teaming (Red + Blue Integration)",
   "Hands-On Labs & Tools",
+  "Cybersecurity Fundamentals",
+
+  // Expanding Tech & Horizons
+  "AI & Machine Learning in Security",
   "Software, Cloud & DevSecOps",
+
+  // Career & Work
   "Freelance & Remote Work",
 ];
 

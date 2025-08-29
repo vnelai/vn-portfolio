@@ -10,16 +10,22 @@ const slugify = (text) =>
     .replace(/\s+/g, "-");
 
 const topics = [
-  "AI & Machine Learning",
+  // Core Cybersecurity Skills
+  "Offensive Security (Red Team)",
+  "SOC & Cyber Analyst Skills (Blue Team)",
+  "Purple Teaming (Red + Blue Integration)",
+  "Cybersecurity Fundamentals",
+  "Hands-On Labs & Tools",
+
+  // Expanding Tech & Horizons
+  "AI & Machine Learning in Security",
+  "Software, Cloud & DevSecOps",
+
+  // Career & Growth
   "Career & Self-Taught Journey",
   "Training & Certifications",
-  "Cybersecurity Fundamentals",
-  "Cyber Talk Digest",
   "Freelance & Remote Work",
-  "Hands-On Labs & Tools",
-  "Offensive Security",
-  "SOC & Cyber Analyst Skills",
-  "Software Cloud & DevSecOps",
+  "Cyber Talk Digest",
 ];
 
 const TopicNav = () => {
