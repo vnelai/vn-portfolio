@@ -128,16 +128,32 @@
 .article-page pre {
   white-space: pre-wrap;    /* allow wrapping */
   word-break: break-word;   /* wrap long tokens if needed */
-  overflow-x: auto;         /* still scroll if truly too long */
+  background: #1e1e1e;     /* dark background */
+  color: #f8f8f2;          /* light text */
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow-x: auto;         /* scroll if needed */
+  margin: 1rem 0;
 }
 
 .article-page code {
   white-space: pre-wrap;
   word-break: break-word;
+  background: #f5f5f5;      /* lighter inline code */
+  color: #c7254e;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
 }
 
 .article-page pre code {
   white-space: inherit;     /* keep code consistent with the <pre> */
+   background: none;         /* remove inline background inside <pre> */
+  padding: 0;
 }
 
 
