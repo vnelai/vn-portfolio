@@ -18,7 +18,7 @@ const topics = [
   "Hands-On Labs & Tools",
 
   // Expanding Tech & Horizons
-  "AI & Machine Learning in Security",
+  "AI & Machine Learning",
   "Software, Cloud & DevSecOps",
 
   // Career & Growth
