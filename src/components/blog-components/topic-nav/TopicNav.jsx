@@ -4,17 +4,22 @@ import "./TopicNav.css";
 
 // Keep the slugify util consistent
 const slugify = (text) =>
-  text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
+  text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
 
 const topics = [
-   "Cybersecurity Fundamentals",
-    "Certifications & Learning",
-    "Career & Self-Taught Journey",
-    "SOC & Cyber Analyst Skills",
-    "Software Cloud & DevSecOps",
-    "Hands-On Labs & Tools",
-    "Freelance & Remote Work",
-    "Cyber Talk Digest",
+  "AI & Machine Learning",
+  "Career & Self-Taught Journey",
+  "Training & Certifications",
+  "Cybersecurity Fundamentals",
+  "Cyber Talk Digest",
+  "Freelance & Remote Work",
+  "Hands-On Labs & Tools",
+  "Offensive Security",
+  "SOC & Cyber Analyst Skills",
+  "Software Cloud & DevSecOps",
 ];
 
 const TopicNav = () => {
@@ -37,7 +42,7 @@ const TopicNav = () => {
         );
       })}
       <Link to="/blog/topic/all" className="topic-nav-item">
-              All
+        All
       </Link>
     </nav>
   );

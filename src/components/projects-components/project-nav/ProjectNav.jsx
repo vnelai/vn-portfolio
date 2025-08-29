@@ -8,13 +8,13 @@ const slugify = (text) =>
   text.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
 
 const topics = [
-  "Full-Stack Development",
-  "Cybersecurity Projects",
-  "Cloud & DevOps",
-  "Web Applications",
-  "Mobile Apps",
-  "Data Science & AI",
-  "Freelance Projects",
+  "AI & Machine Learning",
+  "Cybersecurity",
+  "Offensive Security",
+  "SOC & Analyst",
+  "Hands-On Labs & Tools",
+  "Software, Cloud & DevSecOps",
+  "Freelance & Remote Work",
 ];
 
 const ProjectNav = () => {
