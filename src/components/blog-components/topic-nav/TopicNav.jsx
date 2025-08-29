@@ -12,7 +12,7 @@ const slugify = (text) =>
 const topics = [
   // Core Cybersecurity Skills
   "Offensive Security (Red Team)",
-  "SOC & Cyber Analyst Skills (Blue Team)",
+  "Defensive Security (Blue Team)",
   "Purple Teaming (Red + Blue Integration)",
   "Cybersecurity Fundamentals",
   "Hands-On Labs & Tools",
