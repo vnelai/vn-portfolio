@@ -20,6 +20,7 @@ const topics = [
   // Expanding Tech & Horizons
   "AI & Machine Learning",
   "Software, Cloud & DevSecOps",
+  "Hardware & Home Lab Builds",
 
   // Career & Growth
   "Career & Self-Taught Journey",

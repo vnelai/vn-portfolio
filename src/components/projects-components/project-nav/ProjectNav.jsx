@@ -12,12 +12,12 @@ const topics = [
   "Offensive Security (Red Team)",
   "SOC & Analyst Skills (Blue Team)",
   "Purple Teaming (Red + Blue Integration)",
-  "Hands-On Labs & Tools",
   "Cybersecurity Fundamentals",
 
   // Expanding Tech & Horizons
   "AI & Machine Learning in Security",
   "Software, Cloud & DevSecOps",
+  "Hardware & Home Lab Builds",
 
   // Career & Work
   "Freelance & Remote Work",
