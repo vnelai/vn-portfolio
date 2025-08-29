@@ -125,6 +125,22 @@
   transition: background-color 0.3s ease;
 }
 
+.article-page pre {
+  white-space: pre-wrap;    /* allow wrapping */
+  word-break: break-word;   /* wrap long tokens if needed */
+  overflow-x: auto;         /* still scroll if truly too long */
+}
+
+.article-page code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.article-page pre code {
+  white-space: inherit;     /* keep code consistent with the <pre> */
+}
+
+
 /* Dark mode */
 .dark .back-btn {
   background-color: #7b4c9f;
