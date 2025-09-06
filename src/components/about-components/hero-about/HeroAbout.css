@@ -51,8 +51,8 @@
 }
 
 .hero-subtitle-about{
-  font-size: 1.15rem;  /* slightly smaller for balance */
-  line-height: 1.6;
+  font-size: 1.3rem;  /* slightly smaller for balance */
+  line-height: 1.5;
   margin: 1rem auto 0;
   text-align: center;
 }
@@ -106,10 +106,6 @@ a.cta-button-about.connect {
     font-size: 2.2rem;
   }
 
-  .hero-subtitle-about {
-    font-size: 1.4rem;
-  }
-
   .cta-buttons-about {
     flex-direction: center;
     gap: 1.5rem;
@@ -123,7 +119,7 @@ a.cta-button-about.connect {
   }
 
   .desktop-br{ display:none; }     /* let mobile reflow naturally */
-  .hero-intro{ font-size: 1.6rem; max-width: 28rem; }
-  .hero-subtitle-about{ font-size: 1.05rem; max-width: 28rem; }
+  .hero-intro{ font-size: 1.6rem; max-width: 30rem; }
+  .hero-subtitle-about{ font-size: 1.3rem; max-width: 28rem; }
 
 }
