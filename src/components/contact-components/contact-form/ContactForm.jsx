@@ -58,7 +58,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="contact-form-div">
+    <div id= "contact" className="contact-form-div">
       <h1>Let's Connect</h1>
       {submitted ? (
         <p className="thank-you">

@@ -3,29 +3,30 @@ import { Link } from "react-router-dom";
 import "./HeroContact.css";
 
 const HeroContact = () => {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollToSection = (id, offset = 80) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.pageYOffset - offset; // adjust for fixed header
+    window.scrollTo({ top: y, behavior: "smooth" });
   };
 
   return (
     <section className="hero-section-contact">
       <div className="hero-content-contact">
-        <h1 className="hero-title-contact">Protect Innovate Empower</h1>
-        <h2>Let’s Connect & Build Secure Solutions</h2>
-        <p>
-          I build secure apps, defend against threats, and teach others to do
-          the same. Let’s safeguard the web, together.
-        </p>
+        <h1 className="hero-title-contact">Let's Connect</h1>
+        <h2>I share what I learn, and I love learning from others</h2>
+        <h3>
+          Got a project, opportunity, or just want to talk security?
+        </h3>
         <div className="cta-buttons-blog">
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="cta-button-blog"
+          >
+            ✉️ Send Me a Message
+          </button>
           <Link to="/projects/topic/all" className="cta-button-blog">
             💼 View My Work
-          </Link>
-
-          <Link to="/blog/topic/all" className="cta-button-blog">
-            📚 View Blog
           </Link>
           <a
             href="https://discord.gg/Petv3mtA"
