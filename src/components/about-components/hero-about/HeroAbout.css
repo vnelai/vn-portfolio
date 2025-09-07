@@ -110,6 +110,7 @@ a.cta-button-about.connect {
     flex-direction: center;
     gap: 1.5rem;
     align-items: center;
+    margin-top: 2rem;
   }
 
   .cta-button-about,
@@ -117,7 +118,6 @@ a.cta-button-about.connect {
     padding: 1rem 1.2rem;
     font-size: 1rem;
     min-width: 10rem;
-    margin-top: 2rem;
   }
   
   .hero-intro {
