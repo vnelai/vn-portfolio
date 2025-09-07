@@ -14,7 +14,7 @@ function Footer() {
         <a href="https://www.linkedin.com/in/virginianelai/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href="mailto:vnelai01@gmail.com">
+        <a href="mailto:vnelai.pro@proton.me">
             <SiGoogle />
         </a>
       </div>

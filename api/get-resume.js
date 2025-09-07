@@ -5,7 +5,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-const storedFileName = "Junior-Cyber-Analyst-Resume-VNelai-8-25.pdf";
+const storedFileName = "Resume-VNelai.pdf";
 const downloadFileName = "Virginia-Nelai-Resume.pdf";
 
 export default async function handler(req, res) {

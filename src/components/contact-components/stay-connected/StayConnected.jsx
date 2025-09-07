@@ -27,7 +27,7 @@ function StayConnected() {
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
         <a
-          href="mailto:vnelai01@gmail.com"
+          href="mailto:vnelai.pro@proton.me"
           className="sm-button google"
           target="_blank"
           rel="noopener noreferrer"
