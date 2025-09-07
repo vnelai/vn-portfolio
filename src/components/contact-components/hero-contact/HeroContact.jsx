@@ -23,7 +23,7 @@ const HeroContact = () => {
             onClick={() => scrollToSection("contact")}
             className="cta-button-blog"
           >
-            ✉️ Send Me a Message
+            ✉️ Send a Message
           </button>
           <Link to="/projects/topic/all" className="cta-button-blog">
             💼 View My Work
