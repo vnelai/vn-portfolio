@@ -41,14 +41,14 @@
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  margin: 4.5rem 6rem 5rem 6rem;
+  margin: 4rem;
 }
 
 .hero-content h2 {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  margin: 1.6rem 8.5rem;
+  margin: 1rem 4rem;
 }
 
 .hero-content h1,
