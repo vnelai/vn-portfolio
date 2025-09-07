@@ -34,7 +34,7 @@ const HeroContact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            🤝 Join the Community
+            🤝 Join Community
           </a>
         </div>
       </div>

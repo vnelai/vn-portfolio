@@ -110,6 +110,7 @@ a.cta-button-about.connect {
     flex-direction: center;
     gap: 1.5rem;
     align-items: center;
+    margin-top: 2.2rem;
   }
 
   .cta-button-about,
